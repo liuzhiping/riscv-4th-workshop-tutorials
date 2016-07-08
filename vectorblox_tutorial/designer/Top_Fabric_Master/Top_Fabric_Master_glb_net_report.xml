@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<title>Global Net Report</title>
+<text>Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)</text>
+<text>Date: Thu Jul  7 11:08:53 2016
+</text>
+<section>
+<name>Global Nets Information</name>
+<table>
+<header>
+ <cell/>
+ <cell> From </cell>
+ <cell> GB Location </cell>
+ <cell> Net Name </cell>
+ <cell> Fanout </cell>
+</header>
+<row>
+ <cell>1</cell>
+ <cell>GB[0] </cell>
+ <cell>(218, 54)</cell>
+ <cell>my_mss_top_0/my_mss_0/CCC_0/GL0_INST/U0_YNn</cell>
+ <cell>5206</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>GB[1] </cell>
+ <cell>(219, 54)</cell>
+ <cell>my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int_RNITLPC/U0_YNn</cell>
+ <cell>479</cell>
+</row>
+<row>
+ <cell>3</cell>
+ <cell>GB[3] </cell>
+ <cell>(221, 54)</cell>
+ <cell>my_mss_top_0/my_mss_0/CCC_0/GL1_INST/U0_YNn</cell>
+ <cell>227</cell>
+</row>
+<row>
+ <cell>4</cell>
+ <cell>GB[6] </cell>
+ <cell>(224, 54)</cell>
+ <cell>riscV_axi_0/orca_reset_RNICAA5/U0_YNn_GSouth</cell>
+ <cell>128</cell>
+</row>
+<row>
+ <cell>5</cell>
+ <cell>GB[7] </cell>
+ <cell>(225, 54)</cell>
+ <cell>my_mss_top_0/my_mss_0/my_mss_MSS_0/MSS_ADLIB_INST_RNIEFPC/U0_YNn</cell>
+ <cell>59</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>GB[4] </cell>
+ <cell>(222, 54)</cell>
+ <cell>my_mss_top_0/my_mss_0/my_mss_MSS_0/FIC_2_APB_M_PCLK_inferred_clock_RNI6HD4/U0_YNn</cell>
+ <cell>57</cell>
+</row>
+<row>
+ <cell>7</cell>
+ <cell>GB[2] </cell>
+ <cell>(220, 54)</cell>
+ <cell>CORESPI_0/USPI/UCC/un1_resetn_tx_RNIPA23/U0_YNn_GSouth</cell>
+ <cell>26</cell>
+</row>
+<row>
+ <cell>8</cell>
+ <cell>GB[5] </cell>
+ <cell>(223, 54)</cell>
+ <cell>my_mss_top_0/my_mss_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_YNn_GSouth</cell>
+ <cell>3</cell>
+</row>
+</table>
+<text></text>
+</section>
+<section>
+<name>I/O to GB Connections</name>
+<text>(none)</text>
+</section>
+<section>
+<name>Fabric to GB Connections</name>
+<table>
+<header>
+ <cell/>
+ <cell> From </cell>
+ <cell> From Location </cell>
+ <cell> To </cell>
+ <cell> Net Name </cell>
+ <cell> Net Type </cell>
+ <cell> Fanout </cell>
+</header>
+<row>
+ <cell>1</cell>
+ <cell>my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int:Q</cell>
+ <cell>(239, 64)</cell>
+ <cell>GB[1] </cell>
+ <cell>my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int</cell>
+ <cell>ROUTED</cell>
+ <cell>1866</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>riscV_axi_0/orca_reset:Y</cell>
+ <cell>(321, 6)</cell>
+ <cell>GB[6] </cell>
+ <cell>riscV_axi_0/orca_reset_0</cell>
+ <cell>ROUTED</cell>
+ <cell>115</cell>
+</row>
+<row>
+ <cell>3</cell>
+ <cell>my_mss_top_0/my_mss_0/my_mss_MSS_0/MSS_ADLIB_INST/INST_MSS_010_IP:CONFIG_PRESET_N</cell>
+ <cell>(300, 104)</cell>
+ <cell>GB[7] </cell>
+ <cell>my_mss_top_0/my_mss_0/my_mss_MSS_0/CONFIG_PRESET_N</cell>
+ <cell>ROUTED</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>4</cell>
+ <cell>my_mss_top_0/my_mss_0/my_mss_MSS_0/MSS_ADLIB_INST/INST_MSS_010_IP:CLK_CONFIG_APB</cell>
+ <cell>(300, 104)</cell>
+ <cell>GB[4] </cell>
+ <cell>my_mss_top_0/my_mss_0/my_mss_MSS_0/FIC_2_APB_M_PCLK</cell>
+ <cell>ROUTED</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>5</cell>
+ <cell>CORESPI_0/USPI/UCC/un1_resetn_tx:Y</cell>
+ <cell>(348, 75)</cell>
+ <cell>GB[2] </cell>
+ <cell>CORESPI_0/USPI/UCC/un1_resetn_tx</cell>
+ <cell>ROUTED</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>my_mss_top_0/my_mss_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB:CLKOUT</cell>
+ <cell>(397, 92)</cell>
+ <cell>GB[5] </cell>
+ <cell>my_mss_top_0/my_mss_0/FABOSC_0/N_RCOSC_25_50MHZ_CLKINT</cell>
+ <cell>ROUTED</cell>
+ <cell>1</cell>
+</row>
+</table>
+<text></text>
+</section>
+<section>
+<name>CCC to GB Connections</name>
+<table>
+<header>
+ <cell/>
+ <cell> From </cell>
+ <cell> From Location </cell>
+ <cell>Pin Swapped for Back Annotation Only</cell>
+ <cell> To </cell>
+ <cell> Net Name </cell>
+ <cell> Net Type </cell>
+ <cell> Fanout </cell>
+</header>
+<row>
+ <cell>1</cell>
+ <cell>my_mss_top_0/my_mss_0/CCC_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>CCC-NE1 (390, 92)</cell>
+ <cell>None</cell>
+ <cell>GB[0] </cell>
+ <cell>my_mss_top_0/my_mss_0/CCC_0/GL0_net</cell>
+ <cell>HARDWIRED</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>my_mss_top_0/my_mss_0/CCC_0/CCC_INST/INST_CCC_IP:GL1</cell>
+ <cell>CCC-NE1 (390, 92)</cell>
+ <cell>GL1 =&gt; GL3</cell>
+ <cell>GB[3] </cell>
+ <cell>my_mss_top_0/my_mss_0/CCC_0/GL1_net</cell>
+ <cell>HARDWIRED</cell>
+ <cell>1</cell>
+</row>
+</table>
+<text></text>
+</section>
+<section>
+<name>CCC Input Connections</name>
+<text>(none)</text>
+</section>
+<section>
+<name>Local Clock Nets to RGB Connections</name>
+<text>(none)</text>
+</section>
+<section>
+<name>Global Clock Nets to RGB Connections</name>
+<table>
+<header>
+ <cell/>
+ <cell> From </cell>
+ <cell> From Location </cell>
+ <cell> Net Name </cell>
+ <cell> Fanout </cell>
+ <cell> </cell>
+ <cell> RGB Location </cell>
+ <cell> Local Fanout </cell>
+</header>
+<row>
+ <cell>1</cell>
+ <cell>GB[0] </cell>
+ <cell>(218, 54)</cell>
+ <cell>my_mss_top_0/my_mss_0/CCC_0/GL0_INST/U0_YNn</cell>
+ <cell>5206</cell>
+ <cell>1</cell>
+ <cell>(218, 9)</cell>
+ <cell>73</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(218, 12)</cell>
+ <cell>205</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(218, 45)</cell>
+ <cell>111</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4</cell>
+ <cell>(218, 90)</cell>
+ <cell>44</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5</cell>
+ <cell>(218, 93)</cell>
+ <cell>73</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>6</cell>
+ <cell>(218, 96)</cell>
+ <cell>166</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7</cell>
+ <cell>(218, 99)</cell>
+ <cell>101</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>8</cell>
+ <cell>(218, 102)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>9</cell>
+ <cell>(219, 3)</cell>
+ <cell>162</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>10</cell>
+ <cell>(219, 6)</cell>
+ <cell>175</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>11</cell>
+ <cell>(219, 18)</cell>
+ <cell>216</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>12</cell>
+ <cell>(219, 21)</cell>
+ <cell>112</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>13</cell>
+ <cell>(219, 24)</cell>
+ <cell>238</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>14</cell>
+ <cell>(219, 27)</cell>
+ <cell>204</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>15</cell>
+ <cell>(219, 30)</cell>
+ <cell>136</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>16</cell>
+ <cell>(219, 33)</cell>
+ <cell>143</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>17</cell>
+ <cell>(219, 36)</cell>
+ <cell>132</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>18</cell>
+ <cell>(219, 39)</cell>
+ <cell>110</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>19</cell>
+ <cell>(219, 42)</cell>
+ <cell>125</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>20</cell>
+ <cell>(219, 48)</cell>
+ <cell>189</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>21</cell>
+ <cell>(219, 51)</cell>
+ <cell>176</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>22</cell>
+ <cell>(219, 57)</cell>
+ <cell>209</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>23</cell>
+ <cell>(219, 60)</cell>
+ <cell>164</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>24</cell>
+ <cell>(219, 63)</cell>
+ <cell>155</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>25</cell>
+ <cell>(219, 66)</cell>
+ <cell>108</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>26</cell>
+ <cell>(219, 69)</cell>
+ <cell>202</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>27</cell>
+ <cell>(219, 72)</cell>
+ <cell>234</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>28</cell>
+ <cell>(219, 75)</cell>
+ <cell>213</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>29</cell>
+ <cell>(219, 78)</cell>
+ <cell>186</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>30</cell>
+ <cell>(219, 81)</cell>
+ <cell>216</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>31</cell>
+ <cell>(219, 84)</cell>
+ <cell>219</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>32</cell>
+ <cell>(219, 87)</cell>
+ <cell>173</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>33</cell>
+ <cell>(220, 15)</cell>
+ <cell>235</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>GB[1] </cell>
+ <cell>(219, 54)</cell>
+ <cell>my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int_RNITLPC/U0_YNn</cell>
+ <cell>479</cell>
+ <cell>1</cell>
+ <cell>(218, 15)</cell>
+ <cell>9</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(218, 18)</cell>
+ <cell>10</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(218, 21)</cell>
+ <cell>6</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4</cell>
+ <cell>(218, 24)</cell>
+ <cell>30</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5</cell>
+ <cell>(218, 27)</cell>
+ <cell>15</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>6</cell>
+ <cell>(218, 30)</cell>
+ <cell>16</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7</cell>
+ <cell>(218, 33)</cell>
+ <cell>8</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>8</cell>
+ <cell>(218, 36)</cell>
+ <cell>17</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>9</cell>
+ <cell>(218, 39)</cell>
+ <cell>3</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>10</cell>
+ <cell>(218, 42)</cell>
+ <cell>6</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>11</cell>
+ <cell>(218, 48)</cell>
+ <cell>18</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>12</cell>
+ <cell>(218, 51)</cell>
+ <cell>9</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>13</cell>
+ <cell>(218, 57)</cell>
+ <cell>55</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>14</cell>
+ <cell>(218, 60)</cell>
+ <cell>50</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>15</cell>
+ <cell>(218, 63)</cell>
+ <cell>25</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>16</cell>
+ <cell>(218, 66)</cell>
+ <cell>16</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>17</cell>
+ <cell>(218, 69)</cell>
+ <cell>19</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>18</cell>
+ <cell>(218, 72)</cell>
+ <cell>21</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>19</cell>
+ <cell>(218, 75)</cell>
+ <cell>34</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>20</cell>
+ <cell>(218, 78)</cell>
+ <cell>33</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>21</cell>
+ <cell>(218, 81)</cell>
+ <cell>39</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>22</cell>
+ <cell>(218, 84)</cell>
+ <cell>11</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>23</cell>
+ <cell>(218, 87)</cell>
+ <cell>29</cell>
+</row>
+<row>
+ <cell>3</cell>
+ <cell>GB[3] </cell>
+ <cell>(221, 54)</cell>
+ <cell>my_mss_top_0/my_mss_0/CCC_0/GL1_INST/U0_YNn</cell>
+ <cell>227</cell>
+ <cell>1</cell>
+ <cell>(219, 90)</cell>
+ <cell>16</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(219, 93)</cell>
+ <cell>113</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(219, 96)</cell>
+ <cell>11</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4</cell>
+ <cell>(219, 99)</cell>
+ <cell>29</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5</cell>
+ <cell>(220, 78)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>6</cell>
+ <cell>(220, 81)</cell>
+ <cell>5</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7</cell>
+ <cell>(220, 84)</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>8</cell>
+ <cell>(220, 87)</cell>
+ <cell>46</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>9</cell>
+ <cell>(221, 75)</cell>
+ <cell>4</cell>
+</row>
+<row>
+ <cell>4</cell>
+ <cell>GB[6] </cell>
+ <cell>(224, 54)</cell>
+ <cell>riscV_axi_0/orca_reset_RNICAA5/U0_YNn_GSouth</cell>
+ <cell>128</cell>
+ <cell>1</cell>
+ <cell>(218, 3)</cell>
+ <cell>63</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(218, 6)</cell>
+ <cell>63</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(219, 15)</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell>5</cell>
+ <cell>GB[7] </cell>
+ <cell>(225, 54)</cell>
+ <cell>my_mss_top_0/my_mss_0/my_mss_MSS_0/MSS_ADLIB_INST_RNIEFPC/U0_YNn</cell>
+ <cell>59</cell>
+ <cell>1</cell>
+ <cell>(219, 102)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(220, 48)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(220, 51)</cell>
+ <cell>3</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4</cell>
+ <cell>(220, 60)</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5</cell>
+ <cell>(220, 63)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>6</cell>
+ <cell>(220, 66)</cell>
+ <cell>21</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7</cell>
+ <cell>(220, 69)</cell>
+ <cell>12</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>8</cell>
+ <cell>(220, 72)</cell>
+ <cell>6</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>9</cell>
+ <cell>(220, 75)</cell>
+ <cell>12</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>GB[4] </cell>
+ <cell>(222, 54)</cell>
+ <cell>my_mss_top_0/my_mss_0/my_mss_MSS_0/FIC_2_APB_M_PCLK_inferred_clock_RNI6HD4/U0_YNn</cell>
+ <cell>57</cell>
+ <cell>1</cell>
+ <cell>(220, 102)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(221, 48)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(221, 51)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4</cell>
+ <cell>(221, 60)</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5</cell>
+ <cell>(221, 63)</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>6</cell>
+ <cell>(221, 66)</cell>
+ <cell>21</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7</cell>
+ <cell>(221, 69)</cell>
+ <cell>12</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>8</cell>
+ <cell>(221, 72)</cell>
+ <cell>6</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>9</cell>
+ <cell>(222, 75)</cell>
+ <cell>12</cell>
+</row>
+<row>
+ <cell>7</cell>
+ <cell>GB[2] </cell>
+ <cell>(220, 54)</cell>
+ <cell>CORESPI_0/USPI/UCC/un1_resetn_tx_RNIPA23/U0_YNn_GSouth</cell>
+ <cell>26</cell>
+ <cell>1</cell>
+ <cell>(220, 21)</cell>
+ <cell>4</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(220, 24)</cell>
+ <cell>4</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(220, 39)</cell>
+ <cell>10</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4</cell>
+ <cell>(220, 42)</cell>
+ <cell>8</cell>
+</row>
+<row>
+ <cell>8</cell>
+ <cell>GB[5] </cell>
+ <cell>(223, 54)</cell>
+ <cell>my_mss_top_0/my_mss_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_YNn_GSouth</cell>
+ <cell>3</cell>
+ <cell> </cell>
+ <cell>(221, 42)</cell>
+ <cell>3</cell>
+</row>
+</table>
+<text></text>
+</section>
+</doc>

@@ -1,0 +1,36 @@
+
+===============================================================================.
+
+Info: Global design data:
+      Total globals:                       9
+      Globals that cannot be demoted:      2
+      Globals considered for demotion:     7
+
+
+Info: List of globals that cannot be demoted:
+    CLK    ASYN   DATA   Instance Name
+    ---    ----   ----   -------------
+    5206   0      0      'my_mss_top_0/my_mss_0/CCC_0/GL0_INST'
+    227    0      0      'my_mss_top_0/my_mss_0/CCC_0/GL1_INST'
+
+Info: List of globals considered for demotion:
+    CLK    ASYN   DATA   Instance Name
+    ---    ----   ----   -------------
+    57     0      0      'my_mss_top_0/my_mss_0/my_mss_MSS_0/FIC_2_APB_M_PCLK_inferred_clock_RNI6HD4'
+    3      0      0      'my_mss_top_0/my_mss_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT'
+    0      479    1865   'my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int_RNITLPC'
+    0      128    114    'riscV_axi_0/orca_reset_RNICAA5'
+    0      59     0      'my_mss_top_0/my_mss_0/my_mss_MSS_0/MSS_ADLIB_INST_RNIEFPC'
+    0      26     0      'CORESPI_0/USPI/UCC/un1_resetn_tx_RNIPA23'
+    0      14     0      'my_mss_top_0/my_mss_0/CORERESETP_0/sm0_areset_n_clk_base_RNI8TL8'
+
+Info: Demotion information:
+      Disconnected 1865 data pins from global 'my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int_RNITLPC'.
+      Disconnected 114 data pins from global 'riscV_axi_0/orca_reset_RNICAA5'.
+      Deleted global instance 'my_mss_top_0/my_mss_0/CORERESETP_0/sm0_areset_n_clk_base_RNI8TL8'.
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 1 global instances.
+
+===============================================================================.
+
+INFO: Reading User PDC file /nfs/home/joel/Documents/orca_sf2+/sf2plus/constraint/io/Top_Fabric_Master.io.pdc. 0 error(s) and 0 warning(s)

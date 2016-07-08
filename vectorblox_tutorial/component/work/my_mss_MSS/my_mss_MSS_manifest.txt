@@ -1,0 +1,40 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+
+Date      :  Fri Jun  3 15:35:07 2016
+Project   :  /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT
+Component :  my_mss_MSS
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/my_mss_MSS.v
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/my_mss_MSS.vhd
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/my_mss_MSS_syn.v
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/my_mss_MSS_syn.vhd
+
+HDL source files for Mentor Precision Synthesis tool:
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/my_mss_MSS_pre.v
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/my_mss_MSS_pre.vhd
+
+Stimulus files for all Simulation tools:
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/Actel/SmartFusion2MSS/MSS/1.1.400/peripheral_init.bfm
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/CM3_compile_bfm.tcl
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/test.bfm
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/user.bfm
+
+Firmware files for all Software IDE tools:
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/sys_config_mddr_define.h
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/sys_config_mss_clocks.h
+
+Configuration files to be used for Programming:
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/ENVM.cfg
+
+Configuration files to be used for all Simulation tools:
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/ENVM.cfg
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/MDDR_init.bfm
+
+Configuration files to be used for Power Analysis:
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_mss_MSS/MDDR_init.reg
+

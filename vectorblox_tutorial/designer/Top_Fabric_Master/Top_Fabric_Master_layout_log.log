@@ -1,0 +1,63 @@
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+High-effort              : OFF
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : OFF
+TDPR scenario            : Primary
+
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 15 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
+
+Placer V4.0 - 11.7.0
+Design: Top_Fabric_Master               Started: Thu Jul  7 11:05:00 2016
+
+Initializing Timing-Driven Placement ...
+While analyzing gated clock network, ambiguities have been found on gates CORESPI_0/USPI/UCC/spi_ssel_mux:Y.
+The timing models of these gates have been simplified for Static Timing Analysis.
+Placing design...
+End of placement.
+Pre-Placement Runtime        : 16 seconds
+Placement Runtime            : 182 seconds
+
+Placer completed successfully.
+
+Design: Top_Fabric_Master
+Finished: Thu Jul  7 11:08:50 2016
+Total CPU Time:     00:03:48            Total Elapsed Time: 00:03:50
+Total Memory Usage: 661.6 Mbytes
+                        o - o - o - o - o - o
+
+
+Router
+Design: Top_Fabric_Master               Started: Thu Jul  7 11:08:59 2016
+
+
+Router completed successfully.
+
+Design: Top_Fabric_Master
+Finished: Thu Jul  7 11:09:55 2016
+Total CPU Time:     00:00:54            Total Elapsed Time: 00:00:56
+Total Memory Usage: 625.6 Mbytes
+                        o - o - o - o - o - o
+
+While analyzing gated clock network, ambiguities have been found on gates CORESPI_0/USPI/UCC/spi_ssel_mux:Y.
+The timing models of these gates have been simplified for Static Timing Analysis.
+Info: Iteration 1:
+  Number of violating paths: 0
+  Worst minimum delay slack:
+Resource Usage
++---------------+-------+-------+------------+
+| Type          | Used  | Total | Percentage |
++---------------+-------+-------+------------+
+| 4LUT          | 10309 | 12084 | 85.31      |
+| DFF           | 6535  | 12084 | 54.08      |
+| I/O Register  | 0     | 693   | 0.00       |
+| Logic Element | 11008 | 12084 | 91.10      |
++---------------+-------+-------+------------+
+
