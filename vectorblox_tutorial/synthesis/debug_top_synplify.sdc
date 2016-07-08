@@ -1,0 +1,1 @@
+#1000 define_clock {n:Top_0.CCC_0.GL0_net} -name {Top_CCC_0_FCCC|GL0_net_inferred_clock} -ref_rise {0.000000} -ref_fall {5.000000} -uncertainty {0.000000} -period {10.000000} -clockgroup {Inferred_clkgroup_0} -rise {0.000000} -fall {5.000000}

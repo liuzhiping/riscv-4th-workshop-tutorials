@@ -1,0 +1,47 @@
+Resource Usage Report for Top_Fabric_Master 
+
+Mapping to part: m2s010fbga484std
+Cell usage:
+CCC             1 use
+CLKINT          9 uses
+INV             1 use
+MSS_010         1 use
+RCOSC_25_50MHZ  1 use
+RCOSC_25_50MHZ_FAB  1 use
+SYSRESET        1 use
+CFG1           48 uses
+CFG2           808 uses
+CFG3           3339 uses
+CFG4           2988 uses
+
+Carry primitives used for arithmetic functions:
+ARI1           1987 uses
+
+
+Sequential Cells: 
+SLE            5419 uses
+
+DSP Blocks:    7
+ MACC:         4 Mults
+ MACC:         3 MultAdds
+
+I/O ports: 16
+I/O primitives: 15
+INBUF          5 uses
+OUTBUF         10 uses
+
+
+Global Clock Buffers: 9
+
+
+Total LUTs:    9170
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 540; LUTs = 540;
+RAM1K18  Interface Logic : SLEs = 324; LUTs = 324;
+MACC     Interface Logic : SLEs = 252; LUTs = 252;
+
+Total number of SLEs after P&R:  5419 + 540 + 324 + 252 = 6535;
+Total number of LUTs after P&R:  9170 + 540 + 324 + 252 = 10286;
+

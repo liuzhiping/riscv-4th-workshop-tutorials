@@ -1,0 +1,523 @@
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Jul  7 10:56:10 2016
+#
+
+
+Top view:               Top_Fabric_Master
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.182
+
+                                                          Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                                            Frequency     Frequency     Period        Period        Slack      Type         Group              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+my_mss_CCC_0_FCCC|GL0_net_inferred_clock                  100.0 MHz     83.2 MHz      10.000        12.026        -2.026     inferred     Inferred_clkgroup_0
+my_mss_CCC_0_FCCC|GL1_net_inferred_clock                  100.0 MHz     332.5 MHz     10.000        3.008         6.992      inferred     Inferred_clkgroup_1
+my_mss_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     100.0 MHz     972.8 MHz     10.000        1.028         8.972      inferred     Inferred_clkgroup_3
+my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock                100.0 MHz     121.6 MHz     10.000        8.223         1.777      inferred     Inferred_clkgroup_2
+System                                                    100.0 MHz     103.8 MHz     10.000        9.638         0.362      system       system_clkgroup    
+=============================================================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                        |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                               Ending                                                 |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                 my_mss_CCC_0_FCCC|GL0_net_inferred_clock               |  0.000       0.362   |  No paths    -      |  No paths    -      |  No paths    -    
+my_mss_CCC_0_FCCC|GL0_net_inferred_clock               System                                                 |  0.000       0.457   |  No paths    -      |  No paths    -      |  No paths    -    
+my_mss_CCC_0_FCCC|GL0_net_inferred_clock               my_mss_CCC_0_FCCC|GL0_net_inferred_clock               |  0.000       -0.182  |  No paths    -      |  No paths    -      |  No paths    -    
+my_mss_CCC_0_FCCC|GL0_net_inferred_clock               my_mss_CCC_0_FCCC|GL1_net_inferred_clock               |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+my_mss_CCC_0_FCCC|GL0_net_inferred_clock               my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock             |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+my_mss_CCC_0_FCCC|GL1_net_inferred_clock               my_mss_CCC_0_FCCC|GL0_net_inferred_clock               |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+my_mss_CCC_0_FCCC|GL1_net_inferred_clock               my_mss_CCC_0_FCCC|GL1_net_inferred_clock               |  0.000       0.402   |  No paths    -      |  No paths    -      |  No paths    -    
+my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock             my_mss_CCC_0_FCCC|GL0_net_inferred_clock               |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock             my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock             |  0.000       0.362   |  No paths    -      |  5.000       5.591  |  5.000       5.606
+my_mss_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock  my_mss_CCC_0_FCCC|GL0_net_inferred_clock               |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+my_mss_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock  my_mss_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock  |  0.000       0.362   |  No paths    -      |  No paths    -      |  No paths    -    
+=====================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: my_mss_CCC_0_FCCC|GL0_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                                                    Starting                                                                                   Arrival           
+Instance                                                                                                            Reference                                    Type     Pin          Net                     Time        Slack 
+                                                                                                                    Clock                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[0]     WideMult_1_0_cas[0]     0.206       -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[1]     WideMult_1_0_cas[1]     0.206       -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[2]     WideMult_1_0_cas[2]     0.206       -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[3]     WideMult_1_0_cas[3]     0.206       -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[4]     WideMult_1_0_cas[4]     0.206       -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[5]     WideMult_1_0_cas[5]     0.206       -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[6]     WideMult_1_0_cas[6]     0.206       -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[7]     WideMult_1_0_cas[7]     0.206       -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[8]     WideMult_1_0_cas[8]     0.206       -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[9]     WideMult_1_0_cas[9]     0.206       -0.182
+=================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                                                    Starting                                                                                  Required           
+Instance                                                                                                            Reference                                    Type     Pin         Net                     Time         Slack 
+                                                                                                                    Clock                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[0]     WideMult_1_0_cas[0]     1.170        -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[1]     WideMult_1_0_cas[1]     1.170        -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[2]     WideMult_1_0_cas[2]     1.170        -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[3]     WideMult_1_0_cas[3]     1.170        -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[4]     WideMult_1_0_cas[4]     1.170        -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[5]     WideMult_1_0_cas[5]     1.170        -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[6]     WideMult_1_0_cas[6]     1.170        -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[7]     WideMult_1_0_cas[7]     1.170        -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[8]     WideMult_1_0_cas[8]     1.170        -0.182
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     my_mss_CCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[9]     WideMult_1_0_cas[9]     1.170        -0.182
+=================================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.988
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.170
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.182
+
+    Number of logic level(s):                0
+    Starting point:                          vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0 / CDOUT[0]
+    Ending point:                            vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0 / CDIN[0]
+    The start point is clocked by            my_mss_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+    The end   point is clocked by            my_mss_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+
+Instance / Net                                                                                                               Pin          Pin               Arrival     No. of    
+Name                                                                                                                Type     Name         Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     MACC     CDOUT[0]     Out     0.206     0.206       -         
+WideMult_1_0_cas[0]                                                                                                 Net      -            -       0.782     -           1         
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     MACC     CDIN[0]      In      -         0.988       -         
+==================================================================================================================================================================================
+
+
+Path information for path number 2: 
+    Propagation time:                        0.988
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.170
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.182
+
+    Number of logic level(s):                0
+    Starting point:                          vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0 / CDOUT[1]
+    Ending point:                            vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0 / CDIN[1]
+    The start point is clocked by            my_mss_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+    The end   point is clocked by            my_mss_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+
+Instance / Net                                                                                                               Pin          Pin               Arrival     No. of    
+Name                                                                                                                Type     Name         Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     MACC     CDOUT[1]     Out     0.206     0.206       -         
+WideMult_1_0_cas[1]                                                                                                 Net      -            -       0.782     -           1         
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     MACC     CDIN[1]      In      -         0.988       -         
+==================================================================================================================================================================================
+
+
+Path information for path number 3: 
+    Propagation time:                        0.988
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.170
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.182
+
+    Number of logic level(s):                0
+    Starting point:                          vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0 / CDOUT[2]
+    Ending point:                            vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0 / CDIN[2]
+    The start point is clocked by            my_mss_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+    The end   point is clocked by            my_mss_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+
+Instance / Net                                                                                                               Pin          Pin               Arrival     No. of    
+Name                                                                                                                Type     Name         Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     MACC     CDOUT[2]     Out     0.206     0.206       -         
+WideMult_1_0_cas[2]                                                                                                 Net      -            -       0.782     -           1         
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     MACC     CDIN[2]      In      -         0.988       -         
+==================================================================================================================================================================================
+
+
+Path information for path number 4: 
+    Propagation time:                        0.988
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.170
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.182
+
+    Number of logic level(s):                0
+    Starting point:                          vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0 / CDOUT[3]
+    Ending point:                            vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0 / CDIN[3]
+    The start point is clocked by            my_mss_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+    The end   point is clocked by            my_mss_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+
+Instance / Net                                                                                                               Pin          Pin               Arrival     No. of    
+Name                                                                                                                Type     Name         Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     MACC     CDOUT[3]     Out     0.206     0.206       -         
+WideMult_1_0_cas[3]                                                                                                 Net      -            -       0.782     -           1         
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     MACC     CDIN[3]      In      -         0.988       -         
+==================================================================================================================================================================================
+
+
+Path information for path number 5: 
+    Propagation time:                        0.988
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.170
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.182
+
+    Number of logic level(s):                0
+    Starting point:                          vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0 / CDOUT[4]
+    Ending point:                            vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0 / CDIN[4]
+    The start point is clocked by            my_mss_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+    The end   point is clocked by            my_mss_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+
+Instance / Net                                                                                                               Pin          Pin               Arrival     No. of    
+Name                                                                                                                Type     Name         Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_0_0     MACC     CDOUT[4]     Out     0.206     0.206       -         
+WideMult_1_0_cas[4]                                                                                                 Net      -            -       0.782     -           1         
+vectorblox_mxp_0.core.exec_stage.byte_mul_gen\.multiplier_stage.mult_word_gen\.0\.word0_multiplier.WideMult_1_0     MACC     CDIN[4]      In      -         0.988       -         
+==================================================================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: my_mss_CCC_0_FCCC|GL1_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                                                           Starting                                                                            Arrival          
+Instance                                                                                                                   Reference                                    Type     Pin     Net                   Time        Slack
+                                                                                                                           Clock                                                                                                
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.no_reg_before_ram_addr_gen\.ram_addr_reg_proc\.ram_addr_a_0_0[0]     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       ram_addr_a_0_0[0]     0.061       0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.no_reg_before_ram_addr_gen\.ram_addr_reg_proc\.ram_addr_a_0_0[1]     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       ram_addr_a_0_0[1]     0.061       0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.no_reg_before_ram_addr_gen\.ram_addr_reg_proc\.ram_addr_a_0_0[2]     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       ram_addr_a_0_0[2]     0.061       0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.no_reg_before_ram_addr_gen\.ram_addr_reg_proc\.ram_addr_a_0_0[3]     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       ram_addr_a_0_0[3]     0.061       0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.no_reg_before_ram_addr_gen\.ram_addr_reg_proc\.ram_addr_a_0_0[4]     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       ram_addr_a_0_0[4]     0.061       0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.no_reg_before_ram_addr_gen\.ram_addr_reg_proc\.ram_addr_a_0_0[5]     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       ram_addr_a_0_0[5]     0.061       0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.no_reg_before_ram_addr_gen\.ram_addr_reg_proc\.ram_addr_a_0_0[6]     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       ram_addr_a_0_0[6]     0.061       0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.no_reg_before_ram_addr_gen\.ram_addr_reg_proc\.ram_addr_a_0_0[7]     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       ram_addr_a_0_0[7]     0.061       0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.no_reg_before_ram_addr_gen\.ram_addr_reg_proc\.ram_addr_a_0_0[8]     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       ram_addr_a_0_0[8]     0.061       0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.no_reg_before_ram_addr_gen\.ram_addr_reg_proc\.ram_addr_a_0_0[9]     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       ram_addr_a_0_0[9]     0.061       0.402
+================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                                         Starting                                                                                     Required          
+Instance                                                                                                 Reference                                    Type        Pin           Net                   Time         Slack
+                                                                                                         Clock                                                                                                          
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.2\.xil_ram_gen\.scratchpad_memory.ram_1_ram_1_0_0     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     RAM1K18     B_ADDR[3]     ram_addr_a_0_2[0]     0.441        0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.1\.xil_ram_gen\.scratchpad_memory.ram_1_ram_1_0_0     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     RAM1K18     B_ADDR[3]     ram_addr_a_0_1[0]     0.441        0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.xil_ram_gen\.scratchpad_memory.ram_1_ram_1_0_0     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     RAM1K18     B_ADDR[3]     ram_addr_a_0_3[0]     0.441        0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.0\.xil_ram_gen\.scratchpad_memory.ram_1_ram_1_0_0     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     RAM1K18     B_ADDR[3]     ram_addr_a_0_0[0]     0.441        0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.0\.xil_ram_gen\.scratchpad_memory.ram_1_ram_1_0_0     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     RAM1K18     B_ADDR[4]     ram_addr_a_0_0[1]     0.441        0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.2\.xil_ram_gen\.scratchpad_memory.ram_1_ram_1_0_0     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     RAM1K18     B_ADDR[4]     ram_addr_a_0_2[1]     0.441        0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.1\.xil_ram_gen\.scratchpad_memory.ram_1_ram_1_0_0     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     RAM1K18     B_ADDR[4]     ram_addr_a_0_1[1]     0.441        0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.xil_ram_gen\.scratchpad_memory.ram_1_ram_1_0_0     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     RAM1K18     B_ADDR[4]     ram_addr_a_0_3[1]     0.441        0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.1\.xil_ram_gen\.scratchpad_memory.ram_1_ram_1_0_0     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     RAM1K18     B_ADDR[5]     ram_addr_a_0_1[2]     0.441        0.402
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.2\.xil_ram_gen\.scratchpad_memory.ram_1_ram_1_0_0     my_mss_CCC_0_FCCC|GL1_net_inferred_clock     RAM1K18     B_ADDR[5]     ram_addr_a_0_2[2]     0.441        0.402
+========================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.843
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.441
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.402
+
+    Number of logic level(s):                0
+    Starting point:                          vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.no_reg_before_ram_addr_gen\.ram_addr_reg_proc\.ram_addr_a_0_0[0] / Q
+    Ending point:                            vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.0\.xil_ram_gen\.scratchpad_memory.ram_1_ram_1_0_0 / B_ADDR[3]
+    The start point is clocked by            my_mss_CCC_0_FCCC|GL1_net_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            my_mss_CCC_0_FCCC|GL1_net_inferred_clock [rising] on pin B_CLK
+
+Instance / Net                                                                                                                         Pin           Pin               Arrival     No. of    
+Name                                                                                                                       Type        Name          Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.3\.no_reg_before_ram_addr_gen\.ram_addr_reg_proc\.ram_addr_a_0_0[0]     SLE         Q             Out     0.061     0.061       -         
+ram_addr_a_0_0[0]                                                                                                          Net         -             -       0.782     -           1         
+vectorblox_mxp_0.scratchpad_memory.scratchpad_gen\.0\.xil_ram_gen\.scratchpad_memory.ram_1_ram_1_0_0                       RAM1K18     B_ADDR[3]     In      -         0.843       -         
+=============================================================================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: my_mss_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                               Starting                                                                                             Arrival          
+Instance                                                       Reference                                                 Type     Pin     Net                       Time        Slack
+                                                               Clock                                                                                                                 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+my_mss_top_0.my_mss_0.CORERESETP_0.sdif0_areset_n_rcosc_q1     my_mss_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     SLE      Q       sm0_areset_n_rcosc_q1     0.061       0.362
+=====================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                          Starting                                                                                             Required          
+Instance                                                  Reference                                                 Type     Pin     Net                       Time         Slack
+                                                          Clock                                                                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+my_mss_top_0.my_mss_0.CORERESETP_0.sm0_areset_n_rcosc     my_mss_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     SLE      D       sm0_areset_n_rcosc_q1     0.179        0.362
+=================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.541
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.179
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.362
+
+    Number of logic level(s):                0
+    Starting point:                          my_mss_top_0.my_mss_0.CORERESETP_0.sdif0_areset_n_rcosc_q1 / Q
+    Ending point:                            my_mss_top_0.my_mss_0.CORERESETP_0.sm0_areset_n_rcosc / D
+    The start point is clocked by            my_mss_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            my_mss_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                          Pin      Pin               Arrival     No. of    
+Name                                                           Type     Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------
+my_mss_top_0.my_mss_0.CORERESETP_0.sdif0_areset_n_rcosc_q1     SLE      Q        Out     0.061     0.061       -         
+sm0_areset_n_rcosc_q1                                          Net      -        -       0.480     -           1         
+my_mss_top_0.my_mss_0.CORERESETP_0.sm0_areset_n_rcosc          SLE      D        In      -         0.541       -         
+=========================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                               Starting                                                                                                 Arrival          
+Instance                                                       Reference                                      Type     Pin     Net                                      Time        Slack
+                                                               Clock                                                                                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+my_mss_top_0.my_mss_0.CoreSF2Config_0.INIT_DONE_q1             my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      Q       INIT_DONE_q1                             0.061       0.362
+my_mss_top_0.my_mss_0.CoreSF2Config_0.INIT_DONE_q3             my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      Q       INIT_DONE_q3                             0.076       0.475
+my_mss_top_0.my_mss_0.CoreSF2Config_0.INIT_DONE_q2             my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      Q       INIT_DONE_q2                             0.061       0.482
+my_mss_top_0.my_mss_0.CoreSF2Config_0.paddr[15]                my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      Q       paddr[15]                                0.076       0.603
+my_mss_top_0.my_mss_0.CoreSF2Config_0.state[0]                 my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      Q       state[0]                                 0.061       0.680
+my_mss_top_0.my_mss_0.CoreSF2Config_0.paddr[13]                my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      Q       paddr[13]                                0.076       0.763
+my_mss_top_0.my_mss_0.CoreSF2Config_0.FIC_2_APB_M_PREADY_0     my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      Q       my_mss_MSS_0_FIC_2_APB_MASTER_PREADY     0.061       0.895
+my_mss_top_0.my_mss_0.CoreSF2Config_0.state[1]                 my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      Q       state[1]                                 0.076       0.903
+my_mss_top_0.my_mss_0.CoreSF2Config_0.paddr[12]                my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      Q       paddr[12]                                0.076       1.086
+my_mss_top_0.my_mss_0.CoreSF2Config_0.control_reg_2            my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      Q       control_reg_2                            0.061       1.655
+=========================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                  Starting                                                                                       Required          
+Instance                                                          Reference                                      Type     Pin     Net                            Time         Slack
+                                                                  Clock                                                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+my_mss_top_0.my_mss_0.CoreSF2Config_0.INIT_DONE_q2                my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      D       INIT_DONE_q1                   0.179        0.362
+my_mss_top_0.my_mss_0.CoreSF2Config_0.control_reg_2               my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      EN      control_reg_2_1_sqmuxa_i_0     0.236        0.475
+my_mss_top_0.my_mss_0.CoreSF2Config_0.INIT_DONE_q3                my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      D       INIT_DONE_q2                   0.179        0.482
+my_mss_top_0.my_mss_0.CoreSF2Config_0.FIC_2_APB_M_PREADY_0        my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      EN      N_26_i_0                       0.236        0.603
+my_mss_top_0.my_mss_0.CoreSF2Config_0.state[1]                    my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      D       state_ns[1]                    0.179        0.680
+my_mss_top_0.my_mss_0.CoreSF2Config_0.control_reg_1               my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      EN      un8_int_psel_0_a2              0.236        0.763
+my_mss_top_0.my_mss_0.CoreSF2Config_0.control_reg_2               my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      D       un20_int_psel_0_a2             0.179        0.795
+my_mss_top_0.my_mss_0.CoreSF2Config_0.FIC_2_APB_M_PREADY_0        my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      D       FIC_2_APB_M_PREADY_0_ldmx      0.179        0.895
+my_mss_top_0.my_mss_0.CoreSF2Config_0.FIC_2_APB_M_PRDATA_0[0]     my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      EN      state[1]                       0.236        0.903
+my_mss_top_0.my_mss_0.CoreSF2Config_0.FIC_2_APB_M_PRDATA_0[1]     my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock     SLE      EN      state[1]                       0.236        0.903
+===================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.541
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.179
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.362
+
+    Number of logic level(s):                0
+    Starting point:                          my_mss_top_0.my_mss_0.CoreSF2Config_0.INIT_DONE_q1 / Q
+    Ending point:                            my_mss_top_0.my_mss_0.CoreSF2Config_0.INIT_DONE_q2 / D
+    The start point is clocked by            my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            my_mss_MSS|FIC_2_APB_M_PCLK_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                  Pin      Pin               Arrival     No. of    
+Name                                                   Type     Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------
+my_mss_top_0.my_mss_0.CoreSF2Config_0.INIT_DONE_q1     SLE      Q        Out     0.061     0.061       -         
+INIT_DONE_q1                                           Net      -        -       0.480     -           1         
+my_mss_top_0.my_mss_0.CoreSF2Config_0.INIT_DONE_q2     SLE      D        In      -         0.541       -         
+=================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                      Arrival          
+Instance                      Reference     Type     Pin     Net                            Time        Slack
+                              Clock                                                                          
+-------------------------------------------------------------------------------------------------------------
+axi_splitter_0.M_RDATA[0]     System        SLE      Q       riscV_axi_0_BIF_1_RDATA[0]     0.061       0.362
+axi_splitter_0.M_RDATA[1]     System        SLE      Q       riscV_axi_0_BIF_1_RDATA[1]     0.061       0.362
+axi_splitter_0.M_RDATA[2]     System        SLE      Q       riscV_axi_0_BIF_1_RDATA[2]     0.061       0.362
+axi_splitter_0.M_RDATA[3]     System        SLE      Q       riscV_axi_0_BIF_1_RDATA[3]     0.061       0.362
+axi_splitter_0.M_RDATA[4]     System        SLE      Q       riscV_axi_0_BIF_1_RDATA[4]     0.061       0.362
+axi_splitter_0.M_RDATA[5]     System        SLE      Q       riscV_axi_0_BIF_1_RDATA[5]     0.061       0.362
+axi_splitter_0.M_RDATA[6]     System        SLE      Q       riscV_axi_0_BIF_1_RDATA[6]     0.061       0.362
+axi_splitter_0.M_RDATA[7]     System        SLE      Q       riscV_axi_0_BIF_1_RDATA[7]     0.061       0.362
+axi_splitter_0.M_RDATA[8]     System        SLE      Q       riscV_axi_0_BIF_1_RDATA[8]     0.061       0.362
+axi_splitter_0.M_RDATA[9]     System        SLE      Q       riscV_axi_0_BIF_1_RDATA[9]     0.061       0.362
+=============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                              Starting                                                      Required          
+Instance                                      Reference     Type     Pin     Net                            Time         Slack
+                                              Clock                                                                           
+------------------------------------------------------------------------------------------------------------------------------
+riscV_axi_0.data_bus.avm_data_readdata[0]     System        SLE      D       riscV_axi_0_BIF_1_RDATA[0]     0.179        0.362
+riscV_axi_0.data_bus.avm_data_readdata[1]     System        SLE      D       riscV_axi_0_BIF_1_RDATA[1]     0.179        0.362
+riscV_axi_0.data_bus.avm_data_readdata[2]     System        SLE      D       riscV_axi_0_BIF_1_RDATA[2]     0.179        0.362
+riscV_axi_0.data_bus.avm_data_readdata[3]     System        SLE      D       riscV_axi_0_BIF_1_RDATA[3]     0.179        0.362
+riscV_axi_0.data_bus.avm_data_readdata[4]     System        SLE      D       riscV_axi_0_BIF_1_RDATA[4]     0.179        0.362
+riscV_axi_0.data_bus.avm_data_readdata[5]     System        SLE      D       riscV_axi_0_BIF_1_RDATA[5]     0.179        0.362
+riscV_axi_0.data_bus.avm_data_readdata[6]     System        SLE      D       riscV_axi_0_BIF_1_RDATA[6]     0.179        0.362
+riscV_axi_0.data_bus.avm_data_readdata[7]     System        SLE      D       riscV_axi_0_BIF_1_RDATA[7]     0.179        0.362
+riscV_axi_0.data_bus.avm_data_readdata[8]     System        SLE      D       riscV_axi_0_BIF_1_RDATA[8]     0.179        0.362
+riscV_axi_0.data_bus.avm_data_readdata[9]     System        SLE      D       riscV_axi_0_BIF_1_RDATA[9]     0.179        0.362
+==============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.541
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.179
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.362
+
+    Number of logic level(s):                0
+    Starting point:                          axi_splitter_0.M_RDATA[0] / Q
+    Ending point:                            riscV_axi_0.data_bus.avm_data_readdata[0] / D
+    The start point is clocked by            System [rising] on pin CLK
+    The end   point is clocked by            my_mss_CCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                          Type     Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+axi_splitter_0.M_RDATA[0]                     SLE      Q        Out     0.061     0.061       -         
+riscV_axi_0_BIF_1_RDATA[0]                    Net      -        -       0.480     -           1         
+riscV_axi_0.data_bus.avm_data_readdata[0]     SLE      D        In      -         0.541       -         
+========================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+

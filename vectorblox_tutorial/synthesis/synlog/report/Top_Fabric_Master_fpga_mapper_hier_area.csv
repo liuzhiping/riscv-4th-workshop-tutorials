@@ -1,0 +1,112 @@
+
+. Module name, SLE, CFG, ARI1, BUFFER, MACC, RAM1K18, RAM64X18, GLOBAL, IO
+. Top_Fabric_Master, 5419, 7183, 1987, 0, 7, 9, 14, 9, 15
+.	. Top_Fabric_Master_CoreUARTapb_0_CoreUARTapb, 144, 149, 34, 0, 0, 0, 0, 0, 0
+.	.	. Top_Fabric_Master_CoreUARTapb_0_COREUART, 117, 149, 34, 0, 0, 0, 0, 0, 0
+.	.	.	. Top_Fabric_Master_CoreUARTapb_0_Clock_gen, 20, 26, 13, 0, 0, 0, 0, 0, 0
+.	.	.	. Top_Fabric_Master_CoreUARTapb_0_Rx_async, 36, 70, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. Top_Fabric_Master_CoreUARTapb_0_Tx_async, 21, 26, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. Top_Fabric_Master_CoreUARTapb_0_fifo_256x8, 30, 6, 21, 0, 0, 0, 0, 0, 0
+.	.	.	.	. Top_Fabric_Master_CoreUARTapb_0_fifo_ctrl_128, 30, 6, 21, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Top_Fabric_Master_CoreUARTapb_0_ram128x8_pa4, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	. axi_splitter, 37, 212, 0, 0, 0, 0, 0, 0, 0
+.	. axi_to_apb_0, 19, 62, 0, 0, 0, 0, 0, 0, 0
+.	. axi_to_apb_1, 35, 35, 0, 0, 0, 0, 0, 0, 0
+.	. axi_to_apb_2, 33, 31, 0, 0, 0, 0, 0, 0, 0
+.	. corespi, 190, 279, 21, 0, 0, 0, 2, 1, 0
+.	.	. spi, 190, 279, 21, 0, 0, 0, 2, 1, 0
+.	.	.	. spi_chanctrl, 125, 156, 9, 0, 0, 0, 0, 1, 0
+.	.	.	.	. spi_clockmux, 0, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. spi_control, 0, 6, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. spi_fifo_0, 12, 13, 6, 0, 0, 0, 1, 0, 0
+.	.	.	. spi_fifo_1, 18, 25, 6, 0, 0, 0, 1, 0, 0
+.	.	.	. spi_rf, 35, 69, 0, 0, 0, 0, 0, 0, 0
+.	. fabric_master, 233, 242, 63, 0, 0, 0, 0, 0, 0
+.	. i2s_apb, 24, 19, 0, 0, 0, 0, 1, 0, 0
+.	.	. i2s_decode_slave, 6, 6, 0, 0, 0, 0, 0, 0, 0
+.	. my_mss_top, 264, 422, 0, 0, 0, 0, 0, 7, 0
+.	.	. my_mss, 264, 422, 0, 0, 0, 0, 0, 7, 0
+.	.	.	. COREAHBTOAPB3, 113, 67, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. CoreAHBtoAPB3_AhbToApbSM, 9, 25, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. CoreAHBtoAPB3_ApbAddrData, 102, 37, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. CoreAHBtoAPB3_PenableScheduler, 2, 5, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. CoreAHBLite, 67, 274, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. COREAHBLITE_MATRIX4X16, 67, 274, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. COREAHBLITE_MASTERSTAGE_1_1_85_65538_0, 47, 124, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. COREAHBLITE_DEFAULTSLAVESM_0, 1, 6, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. COREAHBLITE_SLAVESTAGE_0, 11, 88, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. COREAHBLITE_SLAVEARBITER_1_0, 9, 50, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. COREAHBLITE_SLAVESTAGE_1, 9, 62, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. COREAHBLITE_SLAVEARBITER_1, 7, 30, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. CoreAPB3, 0, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. CoreResetP, 28, 9, 0, 0, 0, 0, 0, 2, 0
+.	.	.	. CoreSF2Config, 56, 37, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. my_mss_CCC_0_FCCC, 0, 0, 0, 0, 0, 0, 0, 2, 0
+.	.	.	. my_mss_FABOSC_0_OSC, 0, 0, 0, 0, 0, 0, 0, 1, 0
+.	.	.	. my_mss_MSS, 0, 1, 0, 0, 0, 0, 0, 2, 0
+.	. riscV_axi, 924, 2097, 352, 0, 0, 4, 2, 1, 0
+.	.	. Orca, 740, 1829, 352, 0, 0, 0, 2, 0, 0
+.	.	.	. decode, 242, 225, 0, 0, 0, 0, 2, 0, 0
+.	.	.	.	. register_file, 34, 86, 0, 0, 0, 0, 2, 0, 0
+.	.	.	. execute, 357, 1519, 322, 0, 0, 0, 0, 0, 0
+.	.	.	.	. arithmetic_unit, 34, 687, 54, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. operand_creation, 0, 104, 34, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. shifter, 0, 334, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. branch_unit, 69, 105, 78, 0, 0, 0, 0, 0, 0
+.	.	.	.	. load_store_unit, 6, 219, 32, 0, 0, 0, 0, 0, 0
+.	.	.	.	. system_calls, 234, 342, 158, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. instruction_legal, 0, 18, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. instruction_fetch, 141, 84, 30, 0, 0, 0, 0, 0, 0
+.	.	. apb_to_ram, 7, 23, 0, 0, 0, 0, 0, 0, 0
+.	.	. axi_master, 139, 59, 0, 0, 0, 0, 0, 0, 0
+.	.	. iram, 2, 34, 0, 0, 0, 4, 0, 0, 0
+.	.	.	. bram_microsemi, 0, 32, 0, 0, 0, 4, 0, 0, 0
+.	.	. ram_mux, 0, 44, 0, 0, 0, 0, 0, 0, 0
+.	. vectorblox_mxp, 3516, 3635, 1517, 0, 7, 5, 9, 0, 0
+.	.	. axi4lite_sp_slave, 34, 23, 0, 0, 0, 0, 0, 0, 0
+.	.	. axi_instr_slave, 13, 24, 9, 0, 0, 0, 0, 0, 0
+.	.	. dma_controller_axi, 421, 440, 318, 0, 0, 1, 0, 0, 0
+.	.	.	. dma_engine_axi, 173, 338, 291, 0, 0, 1, 0, 0, 0
+.	.	.	. dma_queue, 194, 98, 27, 0, 0, 0, 0, 0, 0
+.	.	. fsl_handler, 258, 259, 0, 0, 0, 0, 7, 0, 0
+.	.	.	. fifo_sync, 169, 193, 0, 0, 0, 0, 5, 0, 0
+.	.	.	. sdp_ram, 0, 19, 0, 0, 0, 0, 2, 0, 0
+.	.	. scratchpad, 422, 211, 44, 0, 0, 4, 0, 0, 0
+.	.	.	. scratchpad_ram_xil, 0, 0, 0, 0, 0, 1, 0, 0, 0
+.	.	.	. scratchpad_ram_xil_0, 0, 0, 0, 0, 0, 1, 0, 0, 0
+.	.	.	. scratchpad_ram_xil_1, 0, 0, 0, 0, 0, 1, 0, 0, 0
+.	.	.	. scratchpad_ram_xil_2, 0, 0, 0, 0, 0, 1, 0, 0, 0
+.	.	. scratchpad_arbiter, 113, 169, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. barrel_shifter_1_4_true, 0, 7, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. barrel_shifter_1_4_true_0, 0, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. barrel_shifter_9_4_true, 0, 40, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. barrel_shifter_9_4_true_2, 0, 36, 0, 0, 0, 0, 0, 0, 0
+.	.	. vblox1_core, 2255, 2509, 1146, 0, 7, 0, 2, 0, 0
+.	.	.	. accum_unit, 181, 107, 85, 0, 0, 0, 0, 0, 0
+.	.	.	. addr_gen, 823, 944, 921, 0, 0, 0, 2, 0, 0
+.	.	.	.	. dma_hazard_detect, 1, 19, 372, 0, 0, 0, 0, 0, 0
+.	.	.	.	. instr_hazard_detect, 0, 162, 312, 0, 0, 0, 0, 0, 0
+.	.	.	.	. masked_unit, 40, 183, 8, 0, 0, 0, 2, 0, 0
+.	.	.	.	.	. wave_expander_1_2, 0, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. wave_expander_1_4, 0, 9, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. exec_unit, 895, 1008, 140, 0, 7, 0, 0, 0, 0
+.	.	.	.	. alu_unit, 253, 278, 122, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. absv_unit, 6, 38, 50, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. arith_unit, 6, 68, 72, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. cmov_unit, 0, 7, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. mul_unit, 507, 686, 18, 0, 7, 0, 0, 0, 0
+.	.	.	.	.	. byte_shamt_rom, 0, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. byte_shamt_rom_0, 0, 5, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. hardware_mult_18_17_35_4, 102, 1, 0, 0, 1, 0, 0, 0, 0
+.	.	.	.	.	. hardware_mult_34_33_67_4, 218, 2, 0, 0, 4, 0, 0, 0, 0
+.	.	.	.	.	. hardware_mult_9_9_18_0, 54, 0, 0, 0, 1, 0, 0, 0, 0
+.	.	.	.	.	. hardware_mult_9_9_18_4, 54, 0, 0, 0, 1, 0, 0, 0, 0
+.	.	.	.	.	. word_shamt_rom, 0, 49, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. in_shifter, 77, 311, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. barrel_shifter_9_4_false, 0, 59, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. barrel_shifter_9_4_false_0, 0, 63, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. size_up, 3, 21, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. out_shifter, 45, 133, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. barrel_shifter_1_4_true_1, 0, 9, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. barrel_shifter_9_4_true_3, 0, 108, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. size_down, 4, 16, 0, 0, 0, 0, 0, 0, 0
