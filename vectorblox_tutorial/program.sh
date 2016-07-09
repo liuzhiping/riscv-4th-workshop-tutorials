@@ -20,8 +20,8 @@ else
 	 jobmgr SCRIPT:update_fabric_envm.tcl
 fi
 
-cp MyBItstreamFileENVM.stp FPExpress/Top_Fabric_Master/projectData/M2S010_1.stp
-cp MyBItstreamFileENVM.stp FPExpress/Top_Fabric_Master/M2S010_1.stp
+cp MyBItstreamFileENVM.stp FPExpress/Top_Fabric_Master/projectData/M2S060_1.stp
+cp MyBItstreamFileENVM.stp FPExpress/Top_Fabric_Master/M2S060_1.stp
 
 FPExpress SCRIPT:FPExpress.tcl
 
