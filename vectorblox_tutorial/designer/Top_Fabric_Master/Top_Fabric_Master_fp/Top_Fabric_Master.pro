@@ -1,19 +1,27 @@
 <project name="Top_Fabric_Master" version="1.1">
     <ProjectDirectory>
-        /nfs/home/joel/Documents/orca_sf2/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master_fp
+        /nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master_fp
     </ProjectDirectory>
     <View>
         ChainView
     </View>
     <LiberoTargetDevice>
-        M2S010
+        M2S060
     </LiberoTargetDevice>
     <LogFile>
-        /nfs/home/joel/Documents/orca_sf2/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master_fp/Top_Fabric_Master.log
+        /nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master_fp/Top_Fabric_Master.log
     </LogFile>
     <SerializationOption>
         Skip
     </SerializationOption>
+    <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="usb2.0">
+        <name>
+            E2005N2JT
+        </name>
+        <id>
+            E2005N2JT
+        </id>
+    </programmer>
     <configuration>
         <Hardware>
             <FlashPro>
@@ -66,10 +74,10 @@
         </Hardware>
         <Device type="ACTEL">
             <Name>
-                M2S010
+                M2S060
             </Name>
             <Custom>
-                M2S010
+                M2S060
             </Custom>
             <Algo type="unknown">
                 <irlength>

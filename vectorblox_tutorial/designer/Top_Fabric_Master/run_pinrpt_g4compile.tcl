@@ -1,8 +1,8 @@
 DESIGN=Top_Fabric_Master
-DESDIR=/nfs/home/joel/Documents/orca_sf2+/sf2plus/designer/Top_Fabric_Master
-TARGET_DIR=/nfs/home/joel/Documents/orca_sf2+/sf2plus/designer/Top_Fabric_Master
+DESDIR=/nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master
+TARGET_DIR=/nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master
 FAM=SmartFusion2
-DIE=PA4M1000_N
+DIE=PA4M6000_N
 PACKAGE=fg484
 PINRPT_BY_NAME=1
 PINRPT_BY_NUMBER=1

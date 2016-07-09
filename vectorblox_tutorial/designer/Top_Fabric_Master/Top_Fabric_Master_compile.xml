@@ -3,7 +3,7 @@
 <doc>
 <title>Compile Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)</text>
-<text>Date: Thu Jul  7 11:04:02 2016
+<text>Date: Sat Jul  9 11:17:16 2016
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -15,7 +15,7 @@
 </row>
 <row>
  <cell>Device</cell>
- <cell>M2S010</cell>
+ <cell>M2S060</cell>
 </row>
 <row>
  <cell>Package</cell>
@@ -76,11 +76,11 @@
 </row>
 <row>
  <cell>Source</cell>
- <cell>/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/Top_Fabric_Master.edn</cell>
+ <cell>/nfs/home/ryan/orca_new_60/sf2plus/synthesis/Top_Fabric_Master.edn</cell>
 </row>
 <row>
  <cell>Source</cell>
- <cell>/nfs/home/joel/Documents/orca_sf2+/sf2plus/constraint/io/Top_Fabric_Master.io.pdc</cell>
+ <cell>/nfs/home/ryan/orca_new_60/sf2plus/constraint/io/Top_Fabric_Master.io.pdc</cell>
 </row>
 </table>
 <section><name>Options</name></section>
@@ -118,69 +118,69 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>10309</cell>
- <cell>12084</cell>
- <cell>85.31</cell>
+ <cell>10499</cell>
+ <cell>56520</cell>
+ <cell>18.58</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>6535</cell>
- <cell>12084</cell>
- <cell>54.08</cell>
+ <cell>6703</cell>
+ <cell>56520</cell>
+ <cell>11.86</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
  <cell>0</cell>
- <cell>693</cell>
+ <cell>795</cell>
  <cell>0.00</cell>
 </row>
 <row>
  <cell>User I/O</cell>
- <cell>15</cell>
- <cell>231</cell>
- <cell>6.49</cell>
+ <cell>19</cell>
+ <cell>265</cell>
+ <cell>7.17</cell>
 </row>
 <row>
  <cell>-- Single-ended I/O</cell>
- <cell>15</cell>
- <cell>231</cell>
- <cell>6.49</cell>
+ <cell>19</cell>
+ <cell>265</cell>
+ <cell>7.17</cell>
 </row>
 <row>
  <cell>-- Differential I/O Pairs</cell>
  <cell>0</cell>
- <cell>115</cell>
+ <cell>132</cell>
  <cell>0.00</cell>
 </row>
 <row>
  <cell>RAM64x18</cell>
- <cell>15</cell>
- <cell>22</cell>
- <cell>68.18</cell>
+ <cell>16</cell>
+ <cell>72</cell>
+ <cell>22.22</cell>
 </row>
 <row>
  <cell>RAM1K18</cell>
  <cell>9</cell>
- <cell>21</cell>
- <cell>42.86</cell>
+ <cell>69</cell>
+ <cell>13.04</cell>
 </row>
 <row>
  <cell>MACC</cell>
  <cell>7</cell>
- <cell>22</cell>
- <cell>31.82</cell>
+ <cell>72</cell>
+ <cell>9.72</cell>
 </row>
 <row>
  <cell>Chip Globals</cell>
- <cell>8</cell>
- <cell>8</cell>
- <cell>100.00</cell>
+ <cell>9</cell>
+ <cell>16</cell>
+ <cell>56.25</cell>
 </row>
 <row>
  <cell>CCC</cell>
  <cell>1</cell>
- <cell>2</cell>
- <cell>50.00</cell>
+ <cell>6</cell>
+ <cell>16.67</cell>
 </row>
 <row>
  <cell>RCOSC_25_50MHZ</cell>
@@ -216,13 +216,13 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>9193</cell>
- <cell>5419</cell>
+ <cell>9347</cell>
+ <cell>5551</cell>
 </row>
 <row>
  <cell>RAM64x18 Interface Logic</cell>
- <cell>540</cell>
- <cell>540</cell>
+ <cell>576</cell>
+ <cell>576</cell>
 </row>
 <row>
  <cell>RAM1K18 Interface Logic</cell>
@@ -236,8 +236,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>10309</cell>
- <cell>6535</cell>
+ <cell>10499</cell>
+ <cell>6703</cell>
 </row>
 </table>
 <section><name>MSS Resource Usage</name></section>
@@ -381,11 +381,11 @@
 </row>
 <row>
  <cell>31</cell>
- <cell>2</cell>
+ <cell>3</cell>
 </row>
 <row>
  <cell>32</cell>
- <cell>3</cell>
+ <cell>2</cell>
 </row>
 <row>
  <cell>33</cell>
@@ -445,7 +445,7 @@
 </row>
 <row>
  <cell>Output I/O</cell>
- <cell>10</cell>
+ <cell>14</cell>
  <cell>0</cell>
  <cell>0</cell>
 </row>
@@ -483,7 +483,7 @@
  <cell> 3.30v</cell>
  <cell> N/A</cell>
  <cell> 4</cell>
- <cell> 3</cell>
+ <cell> 7</cell>
  <cell> 0</cell>
 </row>
 <row>
@@ -504,7 +504,7 @@
 </header>
 <row>
  <cell>Locked</cell>
- <cell> 15</cell>
+ <cell> 19</cell>
  <cell>100.00%</cell>
 </row>
 <row>
@@ -526,7 +526,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>5206</cell>
+ <cell>5341</cell>
  <cell>INT_NET</cell>
  <cell>Net   : my_mss_top_0_FIC_0_CLK</cell>
 </row>
@@ -541,7 +541,7 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>479</cell>
+ <cell>470</cell>
  <cell>INT_NET</cell>
  <cell>Net   : my_mss_top_0_MSS_READY</cell>
 </row>
@@ -578,7 +578,7 @@
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: riscV_axi_0/orca_reset_RNICAA5/U0_RGB1</cell>
+ <cell>Driver: riscV_axi_0/orca_reset_0_RNIR5E4/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -623,7 +623,22 @@
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: CORESPI_0/USPI/UCC/un1_resetn_tx_RNIPA23/U0_RGB1</cell>
+ <cell>Driver: CORESPI_0/USPI/UCC/un1_resetn_tx_0_RNI80K2/U0_RGB1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Source: NETLIST</cell>
+</row>
+<row>
+ <cell>14</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : my_mss_top_0/my_mss_0/CORERESETP_0/sm0_areset_n_clk_base</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: my_mss_top_0/my_mss_0/CORERESETP_0/sm0_areset_n_clk_base_RNI8TL8/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -662,7 +677,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>1866</cell>
+ <cell>2047</cell>
  <cell>INT_NET</cell>
  <cell>Net   : my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int</cell>
 </row>
@@ -682,7 +697,7 @@
  <cell>Driver: vectorblox_mxp_0/core/address_generation/instr_hazard_RNIVDOJ</cell>
 </row>
 <row>
- <cell>199</cell>
+ <cell>196</cell>
  <cell>INT_NET</cell>
  <cell>Net   : riscV_axi_0/rv/execute_stalled_i_3</cell>
 </row>
@@ -690,16 +705,6 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: riscV_axi_0/rv/X/alu/stall_pipeline_i_0</cell>
-</row>
-<row>
- <cell>172</cell>
- <cell>INT_NET</cell>
- <cell>Net   : riscV_axi_0.SEL</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: riscV_axi_0/apb_bus/SEL</cell>
 </row>
 <row>
  <cell>154</cell>
@@ -712,26 +717,6 @@
  <cell>Driver: vectorblox_mxp_0/fsl_handler_inst/instr_fifo/data_out_ret_152</cell>
 </row>
 <row>
- <cell>142</cell>
- <cell>INT_NET</cell>
- <cell>Net   : my_mss_top_0_MSS_READY_i_0</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int_RNITLPC_0</cell>
-</row>
-<row>
- <cell>115</cell>
- <cell>INT_NET</cell>
- <cell>Net   : riscV_axi_0/orca_reset_0</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: riscV_axi_0/orca_reset</cell>
-</row>
-<row>
  <cell>114</cell>
  <cell>INT_NET</cell>
  <cell>Net   : vectorblox_mxp_0/scratch_port_c[0]</cell>
@@ -740,6 +725,16 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: vectorblox_mxp_0/core/accum_stage/dest_addr[0]</cell>
+</row>
+<row>
+ <cell>113</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : riscV_axi_0/orca_reset_0</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: riscV_axi_0/orca_reset_0</cell>
 </row>
 <row>
  <cell>101</cell>
@@ -752,14 +747,34 @@
  <cell>Driver: vectorblox_mxp_0/core/accum_stage/dest_addr[1]</cell>
 </row>
 <row>
- <cell>99</cell>
+ <cell>97</cell>
  <cell>INT_NET</cell>
- <cell>Net   : riscV_axi_0/rv/e_instr[2]</cell>
+ <cell>Net   : vectorblox_mxp_0/core/exec_stage/byte_mul_gen.multiplier_stage/end_mul_type[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: riscV_axi_0/rv/D/instr_out[2]</cell>
+ <cell>Driver: vectorblox_mxp_0/core/exec_stage/byte_mul_gen.multiplier_stage/end_mul_type[0]</cell>
+</row>
+<row>
+ <cell>95</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : vectorblox_mxp_0/dma_master/queue/N_29_mux_i_0</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: vectorblox_mxp_0/dma_master/queue/queue_1.valid_RNI5NNF1</cell>
+</row>
+<row>
+ <cell>95</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : CFG0_GND_INST_NET</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: CFG0_GND_INST</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -770,7 +785,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>1866</cell>
+ <cell>2047</cell>
  <cell>INT_NET</cell>
  <cell>Net   : my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int</cell>
 </row>
@@ -790,7 +805,7 @@
  <cell>Driver: vectorblox_mxp_0/core/address_generation/instr_hazard_RNIVDOJ</cell>
 </row>
 <row>
- <cell>199</cell>
+ <cell>196</cell>
  <cell>INT_NET</cell>
  <cell>Net   : riscV_axi_0/rv/execute_stalled_i_3</cell>
 </row>
@@ -798,16 +813,6 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: riscV_axi_0/rv/X/alu/stall_pipeline_i_0</cell>
-</row>
-<row>
- <cell>172</cell>
- <cell>INT_NET</cell>
- <cell>Net   : riscV_axi_0.SEL</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: riscV_axi_0/apb_bus/SEL</cell>
 </row>
 <row>
  <cell>154</cell>
@@ -820,26 +825,6 @@
  <cell>Driver: vectorblox_mxp_0/fsl_handler_inst/instr_fifo/data_out_ret_152</cell>
 </row>
 <row>
- <cell>142</cell>
- <cell>INT_NET</cell>
- <cell>Net   : my_mss_top_0_MSS_READY_i_0</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int_RNITLPC_0</cell>
-</row>
-<row>
- <cell>115</cell>
- <cell>INT_NET</cell>
- <cell>Net   : riscV_axi_0/orca_reset_0</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: riscV_axi_0/orca_reset</cell>
-</row>
-<row>
  <cell>114</cell>
  <cell>INT_NET</cell>
  <cell>Net   : vectorblox_mxp_0/scratch_port_c[0]</cell>
@@ -848,6 +833,16 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: vectorblox_mxp_0/core/accum_stage/dest_addr[0]</cell>
+</row>
+<row>
+ <cell>113</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : riscV_axi_0/orca_reset_0</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: riscV_axi_0/orca_reset_0</cell>
 </row>
 <row>
  <cell>101</cell>
@@ -860,14 +855,34 @@
  <cell>Driver: vectorblox_mxp_0/core/accum_stage/dest_addr[1]</cell>
 </row>
 <row>
- <cell>99</cell>
+ <cell>97</cell>
  <cell>INT_NET</cell>
- <cell>Net   : riscV_axi_0/rv/e_instr[2]</cell>
+ <cell>Net   : vectorblox_mxp_0/core/exec_stage/byte_mul_gen.multiplier_stage/end_mul_type[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: riscV_axi_0/rv/D/instr_out[2]</cell>
+ <cell>Driver: vectorblox_mxp_0/core/exec_stage/byte_mul_gen.multiplier_stage/end_mul_type[0]</cell>
+</row>
+<row>
+ <cell>95</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : vectorblox_mxp_0/dma_master/queue/N_29_mux_i_0</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: vectorblox_mxp_0/dma_master/queue/queue_1.valid_RNI5NNF1</cell>
+</row>
+<row>
+ <cell>95</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : CFG0_GND_INST_NET</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: CFG0_GND_INST</cell>
 </row>
 </table>
 </doc>

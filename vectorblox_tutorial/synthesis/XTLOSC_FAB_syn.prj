@@ -1,9 +1,9 @@
 #--  Synopsys, Inc.
 #--  Version J-2015.03M-SP1-2
-#--  Project file /nfs/home/joel/Documents/riscv-4th-workshop-tutorials/vectorblox_tutorial/synthesis/XTLOSC_FAB_syn.prj
+#--  Project file /nfs/home/ryan/orca_new_60/sf2plus/synthesis/XTLOSC_FAB_syn.prj
 
 #project files
-add_file -vhdl -lib work "/nfs/home/joel/Documents/riscv-4th-workshop-tutorials/vectorblox_tutorial/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd"
+add_file -vhdl -lib work "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd"
 
 
 
@@ -15,10 +15,18 @@ set_option -technology SmartFusion2
 set_option -part M2S010
 set_option -package FBGA484
 set_option -speed_grade STD
-set_option -part_companion ""
+set_option -package FBGA484
+set_option -package FBGA484
+set_option -package FBGA484
+set_option -package FBGA484
+set_option -part M2S010
+set_option -package FBGA484
+set_option -speed_grade STD
+set_option -package FBGA484
+set_option -package FBGA484
+set_option -package FBGA484
 
 #compilation/mapping options
-set_option -use_fsm_explorer 0
 set_option -top_module "work.XTLOSC_FAB"
 
 # mapper_options

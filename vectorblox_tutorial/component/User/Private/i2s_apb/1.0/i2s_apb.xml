@@ -5,7 +5,7 @@
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
   <spirit:busInterface>
-    <spirit:name>APB</spirit:name>
+    <spirit:name>APB_bif</spirit:name>
     <spirit:busType spirit:vendor="AMBA" spirit:library="AMBA2" spirit:name="APB" spirit:version="r0p0"/>
     <spirit:slave></spirit:slave>
     <spirit:signalMap>

@@ -1,6 +1,6 @@
 set_device \
     -family  SmartFusion2 \
-    -die     PA4M1000_N \
+    -die     PA4M6000_N \
     -package fg484 \
     -speed   STD \
     -tempr   {COM} \
@@ -14,6 +14,6 @@ set_def {VCCI_3.3_VOLTR} {COM}
 set_def USE_TCGEN 1
 set_def NETLIST_TYPE EDIF
 set_name Top_Fabric_Master
-set_workdir {/nfs/home/joel/Documents/orca_sf2+/sf2plus/designer/Top_Fabric_Master}
-set_log     {/nfs/home/joel/Documents/orca_sf2+/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master_sdc.log}
+set_workdir {/nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master}
+set_log     {/nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master_sdc.log}
 set_design_state pre_layout

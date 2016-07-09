@@ -4,7 +4,7 @@
 <title>Combinational Loop Report</title>
 <text>SmartTime Version 11.7.0.119</text>
 <text>Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)</text>
-<text>Date: Thu Jul  7 11:04:19 2016
+<text>Date: Sat Jul  9 11:17:33 2016
 </text>
 <table>
 <header>
@@ -19,7 +19,7 @@
 </row>
 <row>
  <cell>Die</cell>
- <cell>M2S010</cell>
+ <cell>M2S060</cell>
 </row>
 <row>
  <cell>Package</cell>

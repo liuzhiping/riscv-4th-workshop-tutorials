@@ -116,12 +116,12 @@ if { [string length $inst] != 0 } \
 
 
 save
-set has_violations {/nfs/home/joel/Documents/orca_sf2+/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master_pre_layout_has_violations}
+set has_violations {/nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master_pre_layout_has_violations}
 set fp [open $has_violations w]
 puts $fp [has_violations -short]
 close $fp
-report -type combinational_loops -format xml {/nfs/home/joel/Documents/orca_sf2+/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master_combinational_loops.xml}
-if { [catch "file delete -force -- {/nfs/home/joel/Documents/orca_sf2+/sf2plus/designer/Top_Fabric_Master/pinslacks.txt}"] } {
+report -type combinational_loops -format xml {/nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master_combinational_loops.xml}
+if { [catch "file delete -force -- {/nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master/pinslacks.txt}"] } {
    ;
 }
-report -type slack {/nfs/home/joel/Documents/orca_sf2+/sf2plus/designer/Top_Fabric_Master/pinslacks.txt}
+report -type slack {/nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master/pinslacks.txt}

@@ -1,658 +1,673 @@
 #defaultlanguage:vhdl
-#OPTIONS:"|-layerid|0|-orig_srs|/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synwork/Top_Fabric_Master_comp.srs|-top|work.Top_Fabric_Master|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBTOAPB3_LIB|-lib|COREAHBTOAPB3_LIB|-lib|COREAHBTOAPB3_LIB|-lib|COREAHBTOAPB3_LIB|-lib|COREAHBTOAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBTOAPB3_LIB|-lib|COREAPB3_LIB|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|work|-lib|work|-lib|COREUARTAPB_LIB|-lib|work"
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/linux_a_64/c_vhdl":1456362169
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/lib/vhd/location.map":1456362162
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/lib/vhd/std.vhd":1456362162
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/lib/vhd/snps_haps_pkg.vhd":1456362162
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/lib/vhd/std1164.vhd":1456362162
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/lib/vhd/numeric.vhd":1456362162
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/lib/vhd/umr_capim.vhd":1456362162
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/lib/vhd/arith.vhd":1456362162
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/lib/vhd/unsigned.vhd":1456362162
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/lib/vhd/hyperents.vhd":1456362162
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/axi_splitter.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/axi_to_apb.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/utils.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/top_util_pkg.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreResetP/7.0.104/rtl/vhdl/core/coreresetp_pcie_hotreset.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreSF2Config/3.0.100/rtl/vhdl/core/coresf2config.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/my_mss/CCC_0/my_mss_CCC_0_FCCC.vhd":1467840905
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/lib/generic/smartfusion2.vhd":1456362162
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/my_mss_MSS/my_mss_MSS_syn.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_addrdec.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_defaultslavesm.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_slavearbiter.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_pkg.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_ahbtoapbsm.vhd":1467840902
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_apbaddrdata.vhd":1467840902
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_penablescheduler.vhd":1467840902
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/ahbtoapb3_pkg.vhd":1467840902
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/components.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/components.vhd":1467840902
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/register_file.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/branch_unit.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/load_store_unit.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/sys_call.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/util_pkg.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/sdp_ram.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/hardware_mult_behav.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_clockmux.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/corespi_pkg.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_control.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_fifo.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_rf.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Clock_gen.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Rx_async.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Tx_async.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/fifo_256x8_g4.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/coreuart_pkg.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/i2s_decode.vhd":1467913919
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/components.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/components.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/fabric_master.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreResetP/7.0.104/rtl/vhdl/core/coreresetp.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/my_mss/FABOSC_0/my_mss_FABOSC_0_OSC.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/my_mss_MSS/my_mss_MSS.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_masterstage.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_slavestage.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_matrix4x16.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3.vhd":1467840902
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd":1467840904
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/my_mss/my_mss.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/my_mss_top/my_mss_top.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/apb_to_ram.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/axi_master.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/bram.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/iram.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/decode.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/alu.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/execute.vhd":1467840905
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/lib/vhd/std_logic_textio.vhd":1456362162
-#CUR:"/usr/local/microsemi/Libero_v11.7/Synplify/lib/vhd/std_textio.vhd":1456362162
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/instruction_fetch.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/orca.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/ram_mux.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/axi_wrapper.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/isa_pkg.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/architecture_pkg.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/axi4lite_sp_slave.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/axi_instr_slave.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/dma_engine_axi.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/dma_queue.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/component_pkg.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/dma_controller_axi.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/fifo_sync_behav.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/fsl_handler.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/scratchpad_ram_xil.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/scratchpad.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/barrel_shifter.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/scratchpad_arbiter.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/adder_tree_clk.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/accum_unit.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/dma_hazard_detect.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/instr_hazard_detect.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/wave_expander.vhd":1467840906
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/masked_unit.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/addr_gen.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/absv_unit.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/arith_unit.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/cmov_unit.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/alu_unit.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/shamt_roms.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/mul_unit.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/exec_unit.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/size_up.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/in_shifter.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/size_down.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/out_shifter.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/vblox1_core.vhd":1467840905
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/vectorblox_axi.vhd":1467840906
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_chanctrl.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/corespi.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/CoreUART.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/CoreUARTapb.vhd":1467913767
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/i2s_apb.vhd":1467913884
-#CUR:"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/Top_Fabric_Master.vhd":1467913767
-0 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/axi_splitter.vhd" vhdl
-1 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/axi_to_apb.vhd" vhdl
-2 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/utils.vhd" vhdl
-3 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/components.vhd" vhdl
-4 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/top_util_pkg.vhd" vhdl
-5 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/fabric_master.vhd" vhdl
-6 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreResetP/7.0.104/rtl/vhdl/core/coreresetp_pcie_hotreset.vhd" vhdl
-7 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreResetP/7.0.104/rtl/vhdl/core/coreresetp.vhd" vhdl
-8 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreSF2Config/3.0.100/rtl/vhdl/core/coresf2config.vhd" vhdl
-9 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/my_mss/CCC_0/my_mss_CCC_0_FCCC.vhd" vhdl
-10 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd" vhdl
-11 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/my_mss/FABOSC_0/my_mss_FABOSC_0_OSC.vhd" vhdl
-12 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/my_mss_MSS/my_mss_MSS_syn.vhd" vhdl
-13 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/my_mss_MSS/my_mss_MSS.vhd" vhdl
-14 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_addrdec.vhd" vhdl
-15 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_defaultslavesm.vhd" vhdl
-16 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_masterstage.vhd" vhdl
-17 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_slavearbiter.vhd" vhdl
-18 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_slavestage.vhd" vhdl
-19 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_matrix4x16.vhd" vhdl
-20 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_pkg.vhd" vhdl
-21 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite.vhd" vhdl
-22 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_ahbtoapbsm.vhd" vhdl
-23 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_apbaddrdata.vhd" vhdl
-24 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_penablescheduler.vhd" vhdl
-25 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/ahbtoapb3_pkg.vhd" vhdl
-26 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3.vhd" vhdl
-27 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd" vhdl
-28 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd" vhdl
-29 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd" vhdl
-30 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/components.vhd" vhdl
-31 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/components.vhd" vhdl
-32 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd" vhdl
-33 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/my_mss/my_mss.vhd" vhdl
-34 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/my_mss_top/my_mss_top.vhd" vhdl
-35 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/apb_to_ram.vhd" vhdl
-36 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/axi_master.vhd" vhdl
-37 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/bram.vhd" vhdl
-38 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/iram.vhd" vhdl
-39 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/register_file.vhd" vhdl
-40 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/decode.vhd" vhdl
-41 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/alu.vhd" vhdl
-42 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/branch_unit.vhd" vhdl
-43 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/load_store_unit.vhd" vhdl
-44 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/sys_call.vhd" vhdl
-45 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/execute.vhd" vhdl
-46 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/instruction_fetch.vhd" vhdl
-47 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/orca.vhd" vhdl
-48 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/ram_mux.vhd" vhdl
-49 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/axi_wrapper.vhd" vhdl
-50 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/util_pkg.vhd" vhdl
-51 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/isa_pkg.vhd" vhdl
-52 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/architecture_pkg.vhd" vhdl
-53 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/axi4lite_sp_slave.vhd" vhdl
-54 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/axi_instr_slave.vhd" vhdl
-55 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/dma_engine_axi.vhd" vhdl
-56 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/dma_queue.vhd" vhdl
-57 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/component_pkg.vhd" vhdl
-58 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/dma_controller_axi.vhd" vhdl
-59 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/fifo_sync_behav.vhd" vhdl
-60 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/sdp_ram.vhd" vhdl
-61 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/fsl_handler.vhd" vhdl
-62 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/scratchpad_ram_xil.vhd" vhdl
-63 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/scratchpad.vhd" vhdl
-64 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/scratchpad_arbiter.vhd" vhdl
-65 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/adder_tree_clk.vhd" vhdl
-66 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/accum_unit.vhd" vhdl
-67 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/dma_hazard_detect.vhd" vhdl
-68 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/instr_hazard_detect.vhd" vhdl
-69 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/wave_expander.vhd" vhdl
-70 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/masked_unit.vhd" vhdl
-71 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/addr_gen.vhd" vhdl
-72 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/absv_unit.vhd" vhdl
-73 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/arith_unit.vhd" vhdl
-74 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/cmov_unit.vhd" vhdl
-75 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/alu_unit.vhd" vhdl
-76 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/shamt_roms.vhd" vhdl
-77 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/hardware_mult_behav.vhd" vhdl
-78 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/mul_unit.vhd" vhdl
-79 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/exec_unit.vhd" vhdl
-80 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/barrel_shifter.vhd" vhdl
-81 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/size_up.vhd" vhdl
-82 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/in_shifter.vhd" vhdl
-83 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/size_down.vhd" vhdl
-84 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/out_shifter.vhd" vhdl
-85 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/vblox1_core.vhd" vhdl
-86 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/vectorblox_axi.vhd" vhdl
-87 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_clockmux.vhd" vhdl
-88 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/corespi_pkg.vhd" vhdl
-89 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_chanctrl.vhd" vhdl
-90 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_control.vhd" vhdl
-91 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_fifo.vhd" vhdl
-92 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_rf.vhd" vhdl
-93 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi.vhd" vhdl
-94 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/corespi.vhd" vhdl
-95 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Clock_gen.vhd" vhdl
-96 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Rx_async.vhd" vhdl
-97 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Tx_async.vhd" vhdl
-98 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/fifo_256x8_g4.vhd" vhdl
-99 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/coreuart_pkg.vhd" vhdl
-100 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/CoreUART.vhd" vhdl
-101 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/CoreUARTapb.vhd" vhdl
-102 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/i2s_decode.vhd" vhdl
-103 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/i2s_apb.vhd" vhdl
-104 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/components.vhd" vhdl
-105 "/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/work/Top_Fabric_Master/Top_Fabric_Master.vhd" vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|/nfs/home/ryan/orca_new_60/sf2plus/synthesis/synwork/Top_Fabric_Master_comp.srs|-top|work.Top_Fabric_Master|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|CORESPI_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|work|-lib|work|-lib|COREGPIO_LIB|-lib|COREGPIO_LIB|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBTOAPB3_LIB|-lib|COREAHBTOAPB3_LIB|-lib|COREAHBTOAPB3_LIB|-lib|COREAHBTOAPB3_LIB|-lib|COREAHBTOAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAHBLITE_LIB|-lib|COREAHBTOAPB3_LIB|-lib|COREAPB3_LIB|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREGPIO_LIB|-lib|COREUARTAPB_LIB|-lib|work"
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/linux_a_64/c_vhdl":1456362169
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/location.map":1456362162
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/std.vhd":1456362162
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/snps_haps_pkg.vhd":1456362162
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/std1164.vhd":1456362162
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/numeric.vhd":1456362162
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/umr_capim.vhd":1456362162
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/arith.vhd":1456362162
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/unsigned.vhd":1456362162
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/hyperents.vhd":1456362162
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_clockmux.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/corespi_pkg.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_control.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_fifo.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_rf.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Clock_gen.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Rx_async.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Tx_async.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/fifo_256x8_g4.vhd":1468088088
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/generic/smartfusion2.vhd":1456362162
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/coreuart_pkg.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/axi_splitter.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/axi_to_apb.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio_pkg.vhd":1468088088
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/misc.vhd":1456362162
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/std_textio.vhd":1456362162
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/utils.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/top_util_pkg.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/i2s_decode.vhd":1468087738
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreResetP/7.0.104/rtl/vhdl/core/coreresetp_pcie_hotreset.vhd":1468087890
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreSF2Config/3.0.100/rtl/vhdl/core/coresf2config.vhd":1468087890
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss/CCC_0/my_mss_CCC_0_FCCC.vhd":1468087888
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd":1468087891
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/my_mss_MSS_syn.vhd":1468087905
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_addrdec.vhd":1468087889
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_defaultslavesm.vhd":1468087889
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_slavearbiter.vhd":1468087889
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_pkg.vhd":1468087889
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_ahbtoapbsm.vhd":1468087890
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_apbaddrdata.vhd":1468087890
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_penablescheduler.vhd":1468087890
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/ahbtoapb3_pkg.vhd":1468087890
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd":1468087890
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd":1468087890
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/components.vhd":1468087889
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/components.vhd":1468087890
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd":1468087890
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/register_file.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/branch_unit.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/load_store_unit.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/sys_call.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/util_pkg.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/sdp_ram.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/hardware_mult_behav.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/components.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/components.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_chanctrl.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/corespi.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/CoreUART.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/CoreUARTapb.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio.vhd":1468088088
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/components.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/fabric_master.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/i2s_apb.vhd":1468087738
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreResetP/7.0.104/rtl/vhdl/core/coreresetp.vhd":1468087890
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss/FABOSC_0/my_mss_FABOSC_0_OSC.vhd":1468087891
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/my_mss_MSS.vhd":1468087906
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_masterstage.vhd":1468087889
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_slavestage.vhd":1468087889
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_matrix4x16.vhd":1468087889
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite.vhd":1468087889
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3.vhd":1468087890
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd":1468087890
+#CUR:"/nfs/home/ryan/work_riscV/orca/sf2plus/component/work/my_mss/my_mss.vhd":1466102187
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_top/my_mss_top.vhd":1468087939
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/apb_to_ram.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/axi_master.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/bram.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/iram.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/decode.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/alu.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/execute.vhd":1468087487
+#CUR:"/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/std_logic_textio.vhd":1456362162
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/instruction_fetch.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/orca.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/ram_mux.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/axi_wrapper.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/isa_pkg.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/architecture_pkg.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/axi4lite_sp_slave.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/axi_instr_slave.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/dma_engine_axi.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/dma_queue.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/component_pkg.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/dma_controller_axi.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/fifo_sync_behav.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/fsl_handler.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/scratchpad_ram_xil.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/scratchpad.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/barrel_shifter.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/scratchpad_arbiter.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/adder_tree_clk.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/accum_unit.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/dma_hazard_detect.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/instr_hazard_detect.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/wave_expander.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/masked_unit.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/addr_gen.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/absv_unit.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/arith_unit.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/cmov_unit.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/alu_unit.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/shamt_roms.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/mul_unit.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/exec_unit.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/size_up.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/in_shifter.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/size_down.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/out_shifter.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/vblox1_core.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/hdl/vectorblox_axi.vhd":1468087487
+#CUR:"/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/Top_Fabric_Master.vhd":1468088088
+0 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_clockmux.vhd" vhdl
+1 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/corespi_pkg.vhd" vhdl
+2 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_chanctrl.vhd" vhdl
+3 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_control.vhd" vhdl
+4 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_fifo.vhd" vhdl
+5 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_rf.vhd" vhdl
+6 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi.vhd" vhdl
+7 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/corespi.vhd" vhdl
+8 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Clock_gen.vhd" vhdl
+9 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Rx_async.vhd" vhdl
+10 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Tx_async.vhd" vhdl
+11 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/fifo_256x8_g4.vhd" vhdl
+12 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/coreuart_pkg.vhd" vhdl
+13 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/CoreUART.vhd" vhdl
+14 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/CoreUARTapb.vhd" vhdl
+15 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/axi_splitter.vhd" vhdl
+16 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/axi_to_apb.vhd" vhdl
+17 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio_pkg.vhd" vhdl
+18 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio.vhd" vhdl
+19 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/utils.vhd" vhdl
+20 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/components.vhd" vhdl
+21 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/top_util_pkg.vhd" vhdl
+22 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/fabric_master.vhd" vhdl
+23 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/i2s_decode.vhd" vhdl
+24 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/i2s_apb.vhd" vhdl
+25 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreResetP/7.0.104/rtl/vhdl/core/coreresetp_pcie_hotreset.vhd" vhdl
+26 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreResetP/7.0.104/rtl/vhdl/core/coreresetp.vhd" vhdl
+27 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreSF2Config/3.0.100/rtl/vhdl/core/coresf2config.vhd" vhdl
+28 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss/CCC_0/my_mss_CCC_0_FCCC.vhd" vhdl
+29 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd" vhdl
+30 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss/FABOSC_0/my_mss_FABOSC_0_OSC.vhd" vhdl
+31 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/my_mss_MSS_syn.vhd" vhdl
+32 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/my_mss_MSS.vhd" vhdl
+33 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_addrdec.vhd" vhdl
+34 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_defaultslavesm.vhd" vhdl
+35 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_masterstage.vhd" vhdl
+36 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_slavearbiter.vhd" vhdl
+37 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_slavestage.vhd" vhdl
+38 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_matrix4x16.vhd" vhdl
+39 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_pkg.vhd" vhdl
+40 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite.vhd" vhdl
+41 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_ahbtoapbsm.vhd" vhdl
+42 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_apbaddrdata.vhd" vhdl
+43 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_penablescheduler.vhd" vhdl
+44 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/ahbtoapb3_pkg.vhd" vhdl
+45 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3.vhd" vhdl
+46 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd" vhdl
+47 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd" vhdl
+48 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd" vhdl
+49 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/components.vhd" vhdl
+50 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/components.vhd" vhdl
+51 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd" vhdl
+52 "/nfs/home/ryan/work_riscV/orca/sf2plus/component/work/my_mss/my_mss.vhd" vhdl
+53 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_top/my_mss_top.vhd" vhdl
+54 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/apb_to_ram.vhd" vhdl
+55 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/axi_master.vhd" vhdl
+56 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/bram.vhd" vhdl
+57 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/iram.vhd" vhdl
+58 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/register_file.vhd" vhdl
+59 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/decode.vhd" vhdl
+60 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/alu.vhd" vhdl
+61 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/branch_unit.vhd" vhdl
+62 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/load_store_unit.vhd" vhdl
+63 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/sys_call.vhd" vhdl
+64 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/execute.vhd" vhdl
+65 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/instruction_fetch.vhd" vhdl
+66 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/orca.vhd" vhdl
+67 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/ram_mux.vhd" vhdl
+68 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/axi_wrapper.vhd" vhdl
+69 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/util_pkg.vhd" vhdl
+70 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/isa_pkg.vhd" vhdl
+71 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/architecture_pkg.vhd" vhdl
+72 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/axi4lite_sp_slave.vhd" vhdl
+73 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/axi_instr_slave.vhd" vhdl
+74 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/dma_engine_axi.vhd" vhdl
+75 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/dma_queue.vhd" vhdl
+76 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/component_pkg.vhd" vhdl
+77 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/dma_controller_axi.vhd" vhdl
+78 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/fifo_sync_behav.vhd" vhdl
+79 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/sdp_ram.vhd" vhdl
+80 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/fsl_handler.vhd" vhdl
+81 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/scratchpad_ram_xil.vhd" vhdl
+82 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/scratchpad.vhd" vhdl
+83 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/scratchpad_arbiter.vhd" vhdl
+84 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/adder_tree_clk.vhd" vhdl
+85 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/accum_unit.vhd" vhdl
+86 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/dma_hazard_detect.vhd" vhdl
+87 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/instr_hazard_detect.vhd" vhdl
+88 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/wave_expander.vhd" vhdl
+89 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/masked_unit.vhd" vhdl
+90 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/addr_gen.vhd" vhdl
+91 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/absv_unit.vhd" vhdl
+92 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/arith_unit.vhd" vhdl
+93 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/cmov_unit.vhd" vhdl
+94 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/alu_unit.vhd" vhdl
+95 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/shamt_roms.vhd" vhdl
+96 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/hardware_mult_behav.vhd" vhdl
+97 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/mul_unit.vhd" vhdl
+98 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/exec_unit.vhd" vhdl
+99 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/barrel_shifter.vhd" vhdl
+100 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/size_up.vhd" vhdl
+101 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/in_shifter.vhd" vhdl
+102 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/size_down.vhd" vhdl
+103 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/out_shifter.vhd" vhdl
+104 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/vblox1_core.vhd" vhdl
+105 "/nfs/home/ryan/orca_new_60/sf2plus/hdl/vectorblox_axi.vhd" vhdl
+106 "/nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/components.vhd" vhdl
+107 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/components.vhd" vhdl
+108 "/nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/Top_Fabric_Master.vhd" vhdl
 
 # Dependency Lists (Uses list)
 0 -1
 1 -1
-2 -1
-3 2 
+2 0 1 
+3 -1
 4 -1
-5 3 4 
-6 -1
-7 6 
+5 -1
+6 5 3 4 2 
+7 6 1 
 8 -1
 9 -1
 10 -1
-11 10 
+11 -1
 12 -1
-13 12 
-14 -1
+13 8 10 9 11 12 
+14 13 12 
 15 -1
-16 14 15 
+16 -1
 17 -1
 18 17 
-19 16 18 
-20 -1
-21 19 20 
-22 -1
+19 -1
+20 19 
+21 -1
+22 20 21 
 23 -1
-24 -1
+24 23 21 
 25 -1
-26 22 24 23 25 
+26 25 
 27 -1
 28 -1
-29 27 28 
-30 -1
+29 -1
+30 29 
 31 -1
-32 -1
-33 9 21 26 29 7 8 11 13 30 31 32 
-34 33 
-35 3 4 
-36 3 
-37 2 
-38 37 2 
+32 31 
+33 -1
+34 -1
+35 33 34 
+36 -1
+37 36 
+38 35 37 
 39 -1
-40 39 3 
-41 2 
+40 38 39 
+41 -1
 42 -1
 43 -1
 44 -1
-45 41 42 43 44 3 2 
-46 3 2 
-47 46 40 45 3 2 
-48 2 
-49 47 48 35 38 36 3 
+45 41 43 42 44 
+46 -1
+47 -1
+48 46 47 
+49 -1
 50 -1
-51 50 
-52 50 51 
-53 50 52 
-54 50 52 
-55 50 52 
-56 50 51 52 
-57 51 50 52 
-58 55 56 50 51 52 57 
-59 50 52 57 
-60 -1
-61 60 59 50 51 52 57 
-62 50 
-63 62 50 52 57 
-64 80 50 51 52 57 
-65 50 51 52 57 
-66 65 50 51 52 57 
-67 50 51 52 57 
-68 50 51 52 
-69 50 51 52 57 
-70 69 50 51 52 57 
-71 70 68 67 50 51 52 57 
-72 50 51 52 57 
-73 50 51 52 57 
-74 50 51 52 57 
-75 73 74 72 50 51 52 57 
-76 50 51 52 57 
-77 -1
-78 76 77 50 51 52 57 
-79 78 75 50 51 52 57 
-80 50 51 52 57 
-81 50 51 52 57 
-82 80 81 50 51 52 57 
-83 50 51 52 57 
-84 83 80 50 51 52 57 
-85 71 82 79 66 84 50 51 52 57 
-86 54 61 63 64 58 53 85 50 51 52 57 
-87 -1
-88 -1
-89 87 88 
-90 -1
-91 -1
-92 -1
-93 92 90 91 89 
-94 93 88 
-95 -1
+51 -1
+52 28 40 45 48 26 27 30 32 49 50 51 
+53 52 
+54 20 21 
+55 20 
+56 19 
+57 56 19 
+58 -1
+59 58 20 
+60 19 
+61 -1
+62 -1
+63 -1
+64 60 61 62 63 20 19 
+65 20 19 
+66 65 59 64 20 19 
+67 19 
+68 66 67 54 57 55 20 
+69 -1
+70 69 
+71 69 70 
+72 69 71 
+73 69 71 
+74 69 71 
+75 69 70 71 
+76 70 69 71 
+77 74 75 69 70 71 76 
+78 69 71 76 
+79 -1
+80 79 78 69 70 71 76 
+81 69 
+82 81 69 71 76 
+83 99 69 70 71 76 
+84 69 70 71 76 
+85 84 69 70 71 76 
+86 69 70 71 76 
+87 69 70 71 
+88 69 70 71 76 
+89 88 69 70 71 76 
+90 89 87 86 69 70 71 76 
+91 69 70 71 76 
+92 69 70 71 76 
+93 69 70 71 76 
+94 92 93 91 69 70 71 76 
+95 69 70 71 76 
 96 -1
-97 -1
-98 -1
-99 -1
-100 95 97 96 98 99 
-101 100 99 
-102 -1
-103 102 4 
-104 -1
-105 0 1 94 101 5 103 34 49 86 104 
+97 95 96 69 70 71 76 
+98 97 94 69 70 71 76 
+99 69 70 71 76 
+100 69 70 71 76 
+101 99 100 69 70 71 76 
+102 69 70 71 76 
+103 102 99 69 70 71 76 
+104 90 101 98 85 103 69 70 71 76 
+105 73 80 82 83 77 72 104 69 70 71 76 
+106 -1
+107 -1
+108 15 16 18 7 14 22 24 53 68 105 106 107 
 
 # Dependency Lists (Users Of)
-0 105 
-1 105 
-2 48 47 46 45 41 38 37 3 
-3 49 47 46 45 40 36 35 5 
-4 103 35 5 
-5 105 
+0 2 
+1 7 2 
+2 6 
+3 6 
+4 6 
+5 6 
 6 7 
-7 33 
-8 33 
-9 33 
-10 11 
-11 33 
-12 13 
-13 33 
-14 16 
-15 16 
-16 19 
+7 108 
+8 13 
+9 13 
+10 13 
+11 13 
+12 14 13 
+13 14 
+14 108 
+15 108 
+16 108 
 17 18 
-18 19 
-19 21 
-20 21 
-21 33 
-22 26 
-23 26 
-24 26 
+18 108 
+19 67 66 65 64 60 57 56 20 
+20 68 66 65 64 59 55 54 22 
+21 54 24 22 
+22 108 
+23 24 
+24 108 
 25 26 
-26 33 
-27 29 
-28 29 
-29 33 
-30 33 
-31 33 
-32 33 
-33 34 
-34 105 
-35 49 
-36 49 
+26 52 
+27 52 
+28 52 
+29 30 
+30 52 
+31 32 
+32 52 
+33 35 
+34 35 
+35 38 
+36 37 
 37 38 
-38 49 
+38 40 
 39 40 
-40 47 
+40 52 
 41 45 
 42 45 
 43 45 
 44 45 
-45 47 
-46 47 
-47 49 
-48 49 
-49 105 
-50 86 85 84 83 82 81 80 79 78 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 59 58 57 56 55 54 53 52 51 
-51 86 85 84 83 82 81 80 79 78 76 75 74 73 72 71 70 69 68 67 66 65 64 61 58 57 56 52 
-52 86 85 84 83 82 81 80 79 78 76 75 74 73 72 71 70 69 68 67 66 65 64 63 61 59 58 57 56 55 54 53 
-53 86 
-54 86 
-55 58 
-56 58 
-57 86 85 84 83 82 81 80 79 78 76 75 74 73 72 71 70 69 67 66 65 64 63 61 59 58 
-58 86 
-59 61 
-60 61 
-61 86 
-62 63 
-63 86 
-64 86 
+45 52 
+46 48 
+47 48 
+48 52 
+49 52 
+50 52 
+51 52 
+52 53 
+53 108 
+54 68 
+55 68 
+56 57 
+57 68 
+58 59 
+59 66 
+60 64 
+61 64 
+62 64 
+63 64 
+64 66 
 65 66 
-66 85 
-67 71 
-68 71 
-69 70 
-70 71 
-71 85 
-72 75 
-73 75 
-74 75 
-75 79 
-76 78 
-77 78 
-78 79 
-79 85 
-80 84 82 64 
+66 68 
+67 68 
+68 108 
+69 105 104 103 102 101 100 99 98 97 95 94 93 92 91 90 89 88 87 86 85 84 83 82 81 80 78 77 76 75 74 73 72 71 70 
+70 105 104 103 102 101 100 99 98 97 95 94 93 92 91 90 89 88 87 86 85 84 83 80 77 76 75 71 
+71 105 104 103 102 101 100 99 98 97 95 94 93 92 91 90 89 88 87 86 85 84 83 82 80 78 77 76 75 74 73 72 
+72 105 
+73 105 
+74 77 
+75 77 
+76 105 104 103 102 101 100 99 98 97 95 94 93 92 91 90 89 88 86 85 84 83 82 80 78 77 
+77 105 
+78 80 
+79 80 
+80 105 
 81 82 
-82 85 
-83 84 
+82 105 
+83 105 
 84 85 
-85 86 
-86 105 
-87 89 
-88 94 89 
-89 93 
-90 93 
-91 93 
-92 93 
+85 104 
+86 90 
+87 90 
+88 89 
+89 90 
+90 104 
+91 94 
+92 94 
 93 94 
-94 105 
-95 100 
-96 100 
-97 100 
-98 100 
-99 101 100 
+94 98 
+95 97 
+96 97 
+97 98 
+98 104 
+99 103 101 83 
 100 101 
-101 105 
+101 104 
 102 103 
-103 105 
+103 104 
 104 105 
-105 -1
+105 108 
+106 108 
+107 108 
+108 -1
 
 # Design Unit to File Association
-arch work axi_splitter rtl 0
-module work axi_splitter 0
-arch work axi_to_apb rtl 1
-module work axi_to_apb 1
-arch work fabric_master rtl 5
-module work fabric_master 5
-arch work coreresetp_pcie_hotreset rtl 6
-module work coreresetp_pcie_hotreset 6
-arch work coreresetp rtl 7
-module work coreresetp 7
-arch work coresf2config rtl 8
-module work coresf2config 8
-arch work my_mss_ccc_0_fccc def_arch 9
-module work my_mss_ccc_0_fccc 9
-arch work xtlosc_fab def_arch 10
-module work xtlosc_fab 10
-arch work rcosc_25_50mhz_fab def_arch 10
-module work rcosc_25_50mhz_fab 10
-arch work rcosc_1mhz_fab def_arch 10
-module work rcosc_1mhz_fab 10
-arch work xtlosc def_arch 10
-module work xtlosc 10
-arch work rcosc_25_50mhz def_arch 10
-module work rcosc_25_50mhz 10
-arch work rcosc_1mhz def_arch 10
-module work rcosc_1mhz 10
-arch work my_mss_fabosc_0_osc def_arch 11
-module work my_mss_fabosc_0_osc 11
-arch work mss_010 def_arch 12
-module work mss_010 12
-arch work my_mss_mss rtl 13
-module work my_mss_mss 13
-arch coreahblite_lib coreahblite_addrdec coreahblite_addrdec_arch 14
-module coreahblite_lib coreahblite_addrdec 14
-arch coreahblite_lib coreahblite_defaultslavesm coreahblite_defaultslavesm_arch 15
-module coreahblite_lib coreahblite_defaultslavesm 15
-arch coreahblite_lib coreahblite_masterstage coreahblite_masterstage_arch 16
-module coreahblite_lib coreahblite_masterstage 16
-arch coreahblite_lib coreahblite_slavearbiter coreahblite_slavearbiter_arch 17
-module coreahblite_lib coreahblite_slavearbiter 17
-arch coreahblite_lib coreahblite_slavestage trans 18
-module coreahblite_lib coreahblite_slavestage 18
-arch coreahblite_lib coreahblite_matrix4x16 coreahblite_matrix4x16_arch 19
-module coreahblite_lib coreahblite_matrix4x16 19
-arch coreahblite_lib coreahblite coreahblite_arch 21
-module coreahblite_lib coreahblite 21
-arch coreahbtoapb3_lib coreahbtoapb3_ahbtoapbsm trans 22
-module coreahbtoapb3_lib coreahbtoapb3_ahbtoapbsm 22
-arch coreahbtoapb3_lib coreahbtoapb3_apbaddrdata trans 23
-module coreahbtoapb3_lib coreahbtoapb3_apbaddrdata 23
-arch coreahbtoapb3_lib coreahbtoapb3_penablescheduler trans 24
-module coreahbtoapb3_lib coreahbtoapb3_penablescheduler 24
-arch coreahbtoapb3_lib coreahbtoapb3 trans 26
-module coreahbtoapb3_lib coreahbtoapb3 26
-arch coreapb3_lib coreapb3_muxptob3 coreapb3_muxptob3_arch 27
-module coreapb3_lib coreapb3_muxptob3 27
-arch coreapb3_lib coreapb3_iaddr_reg rtl 28
-module coreapb3_lib coreapb3_iaddr_reg 28
-arch coreapb3_lib coreapb3 coreapb3_arch 29
-module coreapb3_lib coreapb3 29
-arch work my_mss rtl 33
-module work my_mss 33
-arch work my_mss_top rtl 34
-module work my_mss_top 34
-arch work apb_to_ram rtl 35
-module work apb_to_ram 35
-arch work axi_master rtl 36
-module work axi_master 36
-arch work bram_microsemi rtl 37
-module work bram_microsemi 37
-arch work iram rtl 38
-module work iram 38
-arch work register_file rtl 39
-module work register_file 39
-arch work decode rtl 40
-module work decode 40
-arch work arithmetic_unit rtl 41
-module work arithmetic_unit 41
-arch work divider rtl 41
-module work divider 41
-arch work operand_creation rtl 41
-module work operand_creation 41
-arch work shifter rtl 41
-module work shifter 41
-arch work branch_unit latch_middle 42
-module work branch_unit 42
-arch work load_store_unit rtl 43
-module work load_store_unit 43
-arch work system_calls rtl 44
-module work system_calls 44
-arch work instruction_legal rtl 44
-module work instruction_legal 44
-arch work execute behavioural 45
-module work execute 45
-arch work instruction_fetch rtl 46
-module work instruction_fetch 46
-arch work orca rtl 47
-module work orca 47
-arch work ram_mux rtl 48
-module work ram_mux 48
-arch work riscv_axi rtl 49
-module work riscv_axi 49
-arch work axi4lite_sp_slave rtl 53
-module work axi4lite_sp_slave 53
-arch work axi_instr_slave rtl 54
-module work axi_instr_slave 54
-arch work dma_engine_axi rtl 55
-module work dma_engine_axi 55
-arch work dma_queue rtl 56
-module work dma_queue 56
-arch work dma_controller_axi rtl 58
-module work dma_controller_axi 58
-arch work fifo_sync rtl 59
-module work fifo_sync 59
-arch work sdp_ram rtl 60
-module work sdp_ram 60
-arch work fsl_handler rtl 61
-module work fsl_handler 61
-arch work scratchpad_ram_xil rtl 62
-module work scratchpad_ram_xil 62
-arch work scratchpad rtl 63
-module work scratchpad 63
-arch work scratchpad_arbiter rtl 64
-module work scratchpad_arbiter 64
-arch work adder_tree_clk rtl 65
-module work adder_tree_clk 65
-arch work accum_unit rtl 66
-module work accum_unit 66
-arch work dma_hazard_detect rtl 67
-module work dma_hazard_detect 67
-arch work instr_hazard_detect rtl 68
-module work instr_hazard_detect 68
-arch work wave_expander rtl 69
-module work wave_expander 69
-arch work masked_unit whole_waves 70
-module work masked_unit 70
-arch work addr_gen rtl 71
-module work addr_gen 71
-arch work absv_unit rtl 72
-module work absv_unit 72
-arch work arith_unit rtl 73
-module work arith_unit 73
-arch work cmov_unit rtl 74
-module work cmov_unit 74
-arch work alu_unit rtl 75
-module work alu_unit 75
-arch work word_shamt_rom syn 76
-module work word_shamt_rom 76
-arch work half_shamt_rom syn 76
-module work half_shamt_rom 76
-arch work byte_shamt_rom syn 76
-module work byte_shamt_rom 76
-arch work hardware_mult rtl 77
-module work hardware_mult 77
-arch work mul_unit word 78
-arch work mul_unit half 78
-arch work mul_unit byte 78
-module work mul_unit 78
-arch work exec_unit rtl 79
-module work exec_unit 79
-arch work barrel_shifter rtl 80
-module work barrel_shifter 80
-arch work size_up rtl 81
-module work size_up 81
-arch work in_shifter rtl 82
-module work in_shifter 82
-arch work size_down rtl 83
-module work size_down 83
-arch work out_shifter rtl 84
-module work out_shifter 84
-arch work vblox1_core rtl 85
-module work vblox1_core 85
-arch work vectorblox_mxp rtl 86
-module work vectorblox_mxp 86
-arch corespi_lib spi_clockmux trans 87
-module corespi_lib spi_clockmux 87
-arch corespi_lib spi_chanctrl trans 89
-module corespi_lib spi_chanctrl 89
-arch corespi_lib spi_control trans 90
-module corespi_lib spi_control 90
-arch corespi_lib spi_fifo trans 91
-module corespi_lib spi_fifo 91
-arch corespi_lib spi_rf trans 92
-module corespi_lib spi_rf 92
-arch corespi_lib spi trans 93
-module corespi_lib spi 93
-arch corespi_lib corespi trans 94
-module corespi_lib corespi 94
-arch coreuartapb_lib top_fabric_master_coreuartapb_0_clock_gen rtl 95
-module coreuartapb_lib top_fabric_master_coreuartapb_0_clock_gen 95
-arch coreuartapb_lib top_fabric_master_coreuartapb_0_rx_async translated 96
-module coreuartapb_lib top_fabric_master_coreuartapb_0_rx_async 96
-arch coreuartapb_lib top_fabric_master_coreuartapb_0_tx_async translated 97
-module coreuartapb_lib top_fabric_master_coreuartapb_0_tx_async 97
-arch coreuartapb_lib top_fabric_master_coreuartapb_0_ram128x8_pa4 translated 98
-module coreuartapb_lib top_fabric_master_coreuartapb_0_ram128x8_pa4 98
-arch coreuartapb_lib top_fabric_master_coreuartapb_0_fifo_ctrl_128 translated 98
-module coreuartapb_lib top_fabric_master_coreuartapb_0_fifo_ctrl_128 98
-arch coreuartapb_lib top_fabric_master_coreuartapb_0_fifo_256x8 translated 98
-module coreuartapb_lib top_fabric_master_coreuartapb_0_fifo_256x8 98
-arch coreuartapb_lib top_fabric_master_coreuartapb_0_coreuart translated 100
-module coreuartapb_lib top_fabric_master_coreuartapb_0_coreuart 100
-arch coreuartapb_lib top_fabric_master_coreuartapb_0_coreuartapb translated 101
-module coreuartapb_lib top_fabric_master_coreuartapb_0_coreuartapb 101
-arch work i2s_decode_slave rtl 102
-module work i2s_decode_slave 102
-arch work i2s_apb rtl 103
-module work i2s_apb 103
-arch work top_fabric_master rtl 105
-module work top_fabric_master 105
+arch corespi_lib spi_clockmux trans 0
+module corespi_lib spi_clockmux 0
+arch corespi_lib spi_chanctrl trans 2
+module corespi_lib spi_chanctrl 2
+arch corespi_lib spi_control trans 3
+module corespi_lib spi_control 3
+arch corespi_lib spi_fifo trans 4
+module corespi_lib spi_fifo 4
+arch corespi_lib spi_rf trans 5
+module corespi_lib spi_rf 5
+arch corespi_lib spi trans 6
+module corespi_lib spi 6
+arch corespi_lib corespi trans 7
+module corespi_lib corespi 7
+arch coreuartapb_lib top_fabric_master_coreuartapb_0_clock_gen rtl 8
+module coreuartapb_lib top_fabric_master_coreuartapb_0_clock_gen 8
+arch coreuartapb_lib top_fabric_master_coreuartapb_0_rx_async translated 9
+module coreuartapb_lib top_fabric_master_coreuartapb_0_rx_async 9
+arch coreuartapb_lib top_fabric_master_coreuartapb_0_tx_async translated 10
+module coreuartapb_lib top_fabric_master_coreuartapb_0_tx_async 10
+arch coreuartapb_lib top_fabric_master_coreuartapb_0_ram128x8_pa4 translated 11
+module coreuartapb_lib top_fabric_master_coreuartapb_0_ram128x8_pa4 11
+arch coreuartapb_lib top_fabric_master_coreuartapb_0_fifo_ctrl_128 translated 11
+module coreuartapb_lib top_fabric_master_coreuartapb_0_fifo_ctrl_128 11
+arch coreuartapb_lib top_fabric_master_coreuartapb_0_fifo_256x8 translated 11
+module coreuartapb_lib top_fabric_master_coreuartapb_0_fifo_256x8 11
+arch coreuartapb_lib top_fabric_master_coreuartapb_0_coreuart translated 13
+module coreuartapb_lib top_fabric_master_coreuartapb_0_coreuart 13
+arch coreuartapb_lib top_fabric_master_coreuartapb_0_coreuartapb translated 14
+module coreuartapb_lib top_fabric_master_coreuartapb_0_coreuartapb 14
+arch work axi_splitter rtl 15
+module work axi_splitter 15
+arch work axi_to_apb rtl 16
+module work axi_to_apb 16
+arch coregpio_lib coregpio rtl 18
+module coregpio_lib coregpio 18
+arch work fabric_master rtl 22
+module work fabric_master 22
+arch work i2s_decode_slave rtl 23
+module work i2s_decode_slave 23
+arch work i2s_apb rtl 24
+module work i2s_apb 24
+arch work coreresetp_pcie_hotreset rtl 25
+module work coreresetp_pcie_hotreset 25
+arch work coreresetp rtl 26
+module work coreresetp 26
+arch work coresf2config rtl 27
+module work coresf2config 27
+arch work my_mss_ccc_0_fccc def_arch 28
+module work my_mss_ccc_0_fccc 28
+arch work xtlosc_fab def_arch 29
+module work xtlosc_fab 29
+arch work rcosc_25_50mhz_fab def_arch 29
+module work rcosc_25_50mhz_fab 29
+arch work rcosc_1mhz_fab def_arch 29
+module work rcosc_1mhz_fab 29
+arch work xtlosc def_arch 29
+module work xtlosc 29
+arch work rcosc_25_50mhz def_arch 29
+module work rcosc_25_50mhz 29
+arch work rcosc_1mhz def_arch 29
+module work rcosc_1mhz 29
+arch work my_mss_fabosc_0_osc def_arch 30
+module work my_mss_fabosc_0_osc 30
+arch work mss_060 def_arch 31
+module work mss_060 31
+arch work my_mss_mss rtl 32
+module work my_mss_mss 32
+arch coreahblite_lib coreahblite_addrdec coreahblite_addrdec_arch 33
+module coreahblite_lib coreahblite_addrdec 33
+arch coreahblite_lib coreahblite_defaultslavesm coreahblite_defaultslavesm_arch 34
+module coreahblite_lib coreahblite_defaultslavesm 34
+arch coreahblite_lib coreahblite_masterstage coreahblite_masterstage_arch 35
+module coreahblite_lib coreahblite_masterstage 35
+arch coreahblite_lib coreahblite_slavearbiter coreahblite_slavearbiter_arch 36
+module coreahblite_lib coreahblite_slavearbiter 36
+arch coreahblite_lib coreahblite_slavestage trans 37
+module coreahblite_lib coreahblite_slavestage 37
+arch coreahblite_lib coreahblite_matrix4x16 coreahblite_matrix4x16_arch 38
+module coreahblite_lib coreahblite_matrix4x16 38
+arch coreahblite_lib coreahblite coreahblite_arch 40
+module coreahblite_lib coreahblite 40
+arch coreahbtoapb3_lib coreahbtoapb3_ahbtoapbsm trans 41
+module coreahbtoapb3_lib coreahbtoapb3_ahbtoapbsm 41
+arch coreahbtoapb3_lib coreahbtoapb3_apbaddrdata trans 42
+module coreahbtoapb3_lib coreahbtoapb3_apbaddrdata 42
+arch coreahbtoapb3_lib coreahbtoapb3_penablescheduler trans 43
+module coreahbtoapb3_lib coreahbtoapb3_penablescheduler 43
+arch coreahbtoapb3_lib coreahbtoapb3 trans 45
+module coreahbtoapb3_lib coreahbtoapb3 45
+arch coreapb3_lib coreapb3_muxptob3 coreapb3_muxptob3_arch 46
+module coreapb3_lib coreapb3_muxptob3 46
+arch coreapb3_lib coreapb3_iaddr_reg rtl 47
+module coreapb3_lib coreapb3_iaddr_reg 47
+arch coreapb3_lib coreapb3 coreapb3_arch 48
+module coreapb3_lib coreapb3 48
+arch work my_mss rtl 52
+module work my_mss 52
+arch work my_mss_top rtl 53
+module work my_mss_top 53
+arch work apb_to_ram rtl 54
+module work apb_to_ram 54
+arch work axi_master rtl 55
+module work axi_master 55
+arch work bram_microsemi rtl 56
+module work bram_microsemi 56
+arch work iram rtl 57
+module work iram 57
+arch work register_file rtl 58
+module work register_file 58
+arch work decode rtl 59
+module work decode 59
+arch work arithmetic_unit rtl 60
+module work arithmetic_unit 60
+arch work divider rtl 60
+module work divider 60
+arch work operand_creation rtl 60
+module work operand_creation 60
+arch work shifter rtl 60
+module work shifter 60
+arch work branch_unit latch_middle 61
+module work branch_unit 61
+arch work load_store_unit rtl 62
+module work load_store_unit 62
+arch work system_calls rtl 63
+module work system_calls 63
+arch work instruction_legal rtl 63
+module work instruction_legal 63
+arch work execute behavioural 64
+module work execute 64
+arch work instruction_fetch rtl 65
+module work instruction_fetch 65
+arch work orca rtl 66
+module work orca 66
+arch work ram_mux rtl 67
+module work ram_mux 67
+arch work riscv_axi rtl 68
+module work riscv_axi 68
+arch work axi4lite_sp_slave rtl 72
+module work axi4lite_sp_slave 72
+arch work axi_instr_slave rtl 73
+module work axi_instr_slave 73
+arch work dma_engine_axi rtl 74
+module work dma_engine_axi 74
+arch work dma_queue rtl 75
+module work dma_queue 75
+arch work dma_controller_axi rtl 77
+module work dma_controller_axi 77
+arch work fifo_sync rtl 78
+module work fifo_sync 78
+arch work sdp_ram rtl 79
+module work sdp_ram 79
+arch work fsl_handler rtl 80
+module work fsl_handler 80
+arch work scratchpad_ram_xil rtl 81
+module work scratchpad_ram_xil 81
+arch work scratchpad rtl 82
+module work scratchpad 82
+arch work scratchpad_arbiter rtl 83
+module work scratchpad_arbiter 83
+arch work adder_tree_clk rtl 84
+module work adder_tree_clk 84
+arch work accum_unit rtl 85
+module work accum_unit 85
+arch work dma_hazard_detect rtl 86
+module work dma_hazard_detect 86
+arch work instr_hazard_detect rtl 87
+module work instr_hazard_detect 87
+arch work wave_expander rtl 88
+module work wave_expander 88
+arch work masked_unit whole_waves 89
+module work masked_unit 89
+arch work addr_gen rtl 90
+module work addr_gen 90
+arch work absv_unit rtl 91
+module work absv_unit 91
+arch work arith_unit rtl 92
+module work arith_unit 92
+arch work cmov_unit rtl 93
+module work cmov_unit 93
+arch work alu_unit rtl 94
+module work alu_unit 94
+arch work word_shamt_rom syn 95
+module work word_shamt_rom 95
+arch work half_shamt_rom syn 95
+module work half_shamt_rom 95
+arch work byte_shamt_rom syn 95
+module work byte_shamt_rom 95
+arch work hardware_mult rtl 96
+module work hardware_mult 96
+arch work mul_unit word 97
+arch work mul_unit half 97
+arch work mul_unit byte 97
+module work mul_unit 97
+arch work exec_unit rtl 98
+module work exec_unit 98
+arch work barrel_shifter rtl 99
+module work barrel_shifter 99
+arch work size_up rtl 100
+module work size_up 100
+arch work in_shifter rtl 101
+module work in_shifter 101
+arch work size_down rtl 102
+module work size_down 102
+arch work out_shifter rtl 103
+module work out_shifter 103
+arch work vblox1_core rtl 104
+module work vblox1_core 104
+arch work vectorblox_mxp rtl 105
+module work vectorblox_mxp 105
+arch work top_fabric_master rtl 108
+module work top_fabric_master 108
 
 
 # Configuration files used

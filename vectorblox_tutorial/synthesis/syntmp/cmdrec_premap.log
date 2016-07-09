@@ -1,15 +1,15 @@
-/usr/local/microsemi/Libero_v11.7/Synplify/bin/m_generic  -mp  1  -prjfile  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis   -part M2S010  -package FBGA484  -grade STD    -maxfan 10000 -clock_globalthreshold 2 -async_globalthreshold 12 -globalthreshold 5000 -low_power_ram_decomp 0 -opcond COMTC -report_path 4000 -RWCheckOnRam 0 -summaryfile /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synlog/report/Top_Fabric_Master_premap.xml  -top_level_module  work.Top_Fabric_Master  -oedif  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/Top_Fabric_Master.edn  -conchk_prepass  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/Top_Fabric_Master_cck_prepass.rpt   -freq 100.000   /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synwork/Top_Fabric_Master_mult.srs  -flow prepass  -gcc_prepass  -osrd  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synwork/Top_Fabric_Master_prem.srd  -qsap  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/Top_Fabric_Master.sap  -devicelib  /usr/local/microsemi/Libero_v11.7/Synplify/lib/generic/smartfusion2.v  -ologparam  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/syntmp/Top_Fabric_Master.plg  -osyn  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synwork/Top_Fabric_Master_prem.srd  -prjdir  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/  -prjname  Top_Fabric_Master_syn  -log  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synlog/Top_Fabric_Master_premap.srr 
+/nfs/opt/microsemi/Libero_v11.7/Synplify/bin/m_generic  -mp  1  -prjfile  /nfs/home/ryan/orca_new_60/sf2plus/synthesis/scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  /nfs/home/ryan/orca_new_60/sf2plus/synthesis   -part M2S060  -package FBGA484  -grade STD    -maxfan 10000 -clock_globalthreshold 2 -async_globalthreshold 12 -globalthreshold 5000 -low_power_ram_decomp 0 -opcond COMTC -report_path 4000 -RWCheckOnRam 0 -summaryfile /nfs/home/ryan/orca_new_60/sf2plus/synthesis/synlog/report/Top_Fabric_Master_premap.xml  -top_level_module  work.Top_Fabric_Master  -oedif  /nfs/home/ryan/orca_new_60/sf2plus/synthesis/Top_Fabric_Master.edn  -conchk_prepass  /nfs/home/ryan/orca_new_60/sf2plus/synthesis/Top_Fabric_Master_cck_prepass.rpt   -freq 100.000   /nfs/home/ryan/orca_new_60/sf2plus/synthesis/synwork/Top_Fabric_Master_mult.srs  -flow prepass  -gcc_prepass  -osrd  /nfs/home/ryan/orca_new_60/sf2plus/synthesis/synwork/Top_Fabric_Master_prem.srd  -qsap  /nfs/home/ryan/orca_new_60/sf2plus/synthesis/Top_Fabric_Master.sap  -devicelib  /nfs/opt/microsemi/Libero_v11.7/Synplify/lib/generic/smartfusion2.v  -ologparam  /nfs/home/ryan/orca_new_60/sf2plus/synthesis/syntmp/Top_Fabric_Master.plg  -osyn  /nfs/home/ryan/orca_new_60/sf2plus/synthesis/synwork/Top_Fabric_Master_prem.srd  -prjdir  /nfs/home/ryan/orca_new_60/sf2plus/synthesis/  -prjname  Top_Fabric_Master_syn  -log  /nfs/home/ryan/orca_new_60/sf2plus/synthesis/synlog/Top_Fabric_Master_premap.srr 
 rc:1 success:1
-/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/scratchproject.prs|o|1467913875|13897
-/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/Top_Fabric_Master.edn|o|1467913999|12497342
-/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/Top_Fabric_Master_cck_prepass.rpt|o|0|0
-/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synwork/Top_Fabric_Master_mult.srs|i|1467914083|48142
-/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synwork/Top_Fabric_Master_prem.srd|o|1467914085|1098183
-/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/Top_Fabric_Master.sap|o|1467914086|330913
-/usr/local/microsemi/Libero_v11.7/Synplify/lib/generic/smartfusion2.v|i|1456362162|15475
-/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/syntmp/Top_Fabric_Master.plg|o|1467914084|0
-/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synwork/Top_Fabric_Master_prem.srd|o|1467914085|1098183
-/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synlog/Top_Fabric_Master_premap.srr|o|1467914086|66388
-/usr/local/microsemi/Libero_v11.7/Synplify/linux_a_64/m_generic|i|1456362169|29426048
-/usr/local/microsemi/Libero_v11.7/Synplify/linux/m_generic|i|1456362166|27757116
-/usr/local/microsemi/Libero_v11.7/Synplify/bin/m_generic|i|1456362165|345
+/nfs/home/ryan/orca_new_60/sf2plus/synthesis/scratchproject.prs|o|1468088125|13458
+/nfs/home/ryan/orca_new_60/sf2plus/synthesis/Top_Fabric_Master.edn|o|0|0
+/nfs/home/ryan/orca_new_60/sf2plus/synthesis/Top_Fabric_Master_cck_prepass.rpt|o|0|0
+/nfs/home/ryan/orca_new_60/sf2plus/synthesis/synwork/Top_Fabric_Master_mult.srs|i|1468088140|55478
+/nfs/home/ryan/orca_new_60/sf2plus/synthesis/synwork/Top_Fabric_Master_prem.srd|o|1468088142|1119207
+/nfs/home/ryan/orca_new_60/sf2plus/synthesis/Top_Fabric_Master.sap|o|1468088143|334453
+/nfs/opt/microsemi/Libero_v11.7/Synplify/lib/generic/smartfusion2.v|i|1456362162|15475
+/nfs/home/ryan/orca_new_60/sf2plus/synthesis/syntmp/Top_Fabric_Master.plg|o|1468088140|0
+/nfs/home/ryan/orca_new_60/sf2plus/synthesis/synwork/Top_Fabric_Master_prem.srd|o|1468088142|1119207
+/nfs/home/ryan/orca_new_60/sf2plus/synthesis/synlog/Top_Fabric_Master_premap.srr|o|1468088143|64564
+/nfs/opt/microsemi/Libero_v11.7/Synplify/linux_a_64/m_generic|i|1456362169|29426048
+/nfs/opt/microsemi/Libero_v11.7/Synplify/linux/m_generic|i|1456362166|27757116
+/nfs/opt/microsemi/Libero_v11.7/Synplify/bin/m_generic|i|1456362165|345

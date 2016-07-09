@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Thu Jun 16 11:36:30 2016
+-- Created by SmartDesign Sat Jul  9 11:11:38 2016
 -- Version: v11.7 11.7.0.119
 ----------------------------------------------------------------------
 
@@ -404,12 +404,12 @@ signal MSS_READY_net_1                                    : std_logic;
 signal AMBA_MASTER_0_HREADY_net_0                         : std_logic;
 signal MMUART_0_TXD_M2F_net_1                             : std_logic;
 signal GL1_net_1                                          : std_logic;
-signal AMBA_MASTER_0_HRDATA_net_0                         : std_logic_vector(31 downto 0);
-signal AMBA_MASTER_0_HRESP_net_0                          : std_logic_vector(1 downto 0);
-signal APBmslave1_PADDR_net_0                             : std_logic_vector(31 downto 0);
 signal APBmslave1_PSELx_net_0                             : std_logic;
 signal APBmslave1_PENABLE_net_0                           : std_logic;
 signal APBmslave1_PWRITE_net_0                            : std_logic;
+signal AMBA_MASTER_0_HRDATA_net_0                         : std_logic_vector(31 downto 0);
+signal AMBA_MASTER_0_HRESP_net_0                          : std_logic_vector(1 downto 0);
+signal APBmslave1_PADDR_net_0                             : std_logic_vector(31 downto 0);
 signal APBmslave1_PWDATA_net_0                            : std_logic_vector(31 downto 0);
 ----------------------------------------------------------------------
 -- TiedOff Signals
@@ -504,23 +504,23 @@ signal CoreAHBLite_0_AHBmslave16_HSIZE_0_1to0             : std_logic_vector(1 d
 signal CoreAHBLite_0_AHBmslave16_HSIZE_0                  : std_logic_vector(1 downto 0);
 signal CoreAHBLite_0_AHBmslave16_HSIZE                    : std_logic_vector(2 downto 0);
 
+signal CoreSF2Config_0_MDDR_APBmslave_PADDR               : std_logic_vector(15 downto 2);
 signal CoreSF2Config_0_MDDR_APBmslave_PADDR_0_10to2       : std_logic_vector(10 downto 2);
 signal CoreSF2Config_0_MDDR_APBmslave_PADDR_0             : std_logic_vector(10 downto 2);
-signal CoreSF2Config_0_MDDR_APBmslave_PADDR               : std_logic_vector(15 downto 2);
 
-signal CoreSF2Config_0_MDDR_APBmslave_PRDATA              : std_logic_vector(15 downto 0);
 signal CoreSF2Config_0_MDDR_APBmslave_PRDATA_0_31to16     : std_logic_vector(31 downto 16);
 signal CoreSF2Config_0_MDDR_APBmslave_PRDATA_0_15to0      : std_logic_vector(15 downto 0);
 signal CoreSF2Config_0_MDDR_APBmslave_PRDATA_0            : std_logic_vector(31 downto 0);
+signal CoreSF2Config_0_MDDR_APBmslave_PRDATA              : std_logic_vector(15 downto 0);
 
+signal CoreSF2Config_0_MDDR_APBmslave_PWDATA              : std_logic_vector(31 downto 0);
 signal CoreSF2Config_0_MDDR_APBmslave_PWDATA_0_15to0      : std_logic_vector(15 downto 0);
 signal CoreSF2Config_0_MDDR_APBmslave_PWDATA_0            : std_logic_vector(15 downto 0);
-signal CoreSF2Config_0_MDDR_APBmslave_PWDATA              : std_logic_vector(31 downto 0);
 
-signal my_mss_MSS_0_FIC_2_APB_MASTER_PADDR                : std_logic_vector(15 downto 2);
 signal my_mss_MSS_0_FIC_2_APB_MASTER_PADDR_0_16to16       : std_logic_vector(16 to 16);
 signal my_mss_MSS_0_FIC_2_APB_MASTER_PADDR_0_15to2        : std_logic_vector(15 downto 2);
 signal my_mss_MSS_0_FIC_2_APB_MASTER_PADDR_0              : std_logic_vector(16 downto 2);
+signal my_mss_MSS_0_FIC_2_APB_MASTER_PADDR                : std_logic_vector(15 downto 2);
 
 
 begin
@@ -624,18 +624,18 @@ begin
  MMUART_0_TXD_M2F                     <= MMUART_0_TXD_M2F_net_1;
  GL1_net_1                            <= GL1_net_0;
  GL1                                  <= GL1_net_1;
- AMBA_MASTER_0_HRDATA_net_0           <= AMBA_MASTER_0_HRDATA;
- AMBA_MASTER_0_HRDATA_M0(31 downto 0) <= AMBA_MASTER_0_HRDATA_net_0;
- AMBA_MASTER_0_HRESP_net_0            <= AMBA_MASTER_0_HRESP;
- AMBA_MASTER_0_HRESP_M0(1 downto 0)   <= AMBA_MASTER_0_HRESP_net_0;
- APBmslave1_PADDR_net_0               <= APBmslave1_PADDR;
- PADDRS(31 downto 0)                  <= APBmslave1_PADDR_net_0;
  APBmslave1_PSELx_net_0               <= APBmslave1_PSELx;
  PSELS1                               <= APBmslave1_PSELx_net_0;
  APBmslave1_PENABLE_net_0             <= APBmslave1_PENABLE;
  PENABLES                             <= APBmslave1_PENABLE_net_0;
  APBmslave1_PWRITE_net_0              <= APBmslave1_PWRITE;
  PWRITES                              <= APBmslave1_PWRITE_net_0;
+ AMBA_MASTER_0_HRDATA_net_0           <= AMBA_MASTER_0_HRDATA;
+ AMBA_MASTER_0_HRDATA_M0(31 downto 0) <= AMBA_MASTER_0_HRDATA_net_0;
+ AMBA_MASTER_0_HRESP_net_0            <= AMBA_MASTER_0_HRESP;
+ AMBA_MASTER_0_HRESP_M0(1 downto 0)   <= AMBA_MASTER_0_HRESP_net_0;
+ APBmslave1_PADDR_net_0               <= APBmslave1_PADDR;
+ PADDRS(31 downto 0)                  <= APBmslave1_PADDR_net_0;
  APBmslave1_PWDATA_net_0              <= APBmslave1_PWDATA;
  PWDATAS(31 downto 0)                 <= APBmslave1_PWDATA_net_0;
 ----------------------------------------------------------------------

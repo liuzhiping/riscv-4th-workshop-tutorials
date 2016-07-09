@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Microsemi SmartDesign Thu Jul  7 10:49:50 2016
+-- Created by Microsemi SmartDesign Sat Jul  9 11:14:55 2016
 -- Parameters for CORESPI
 ----------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ package coreparameters is
     constant CFG_FRAME_SIZE : integer := 8;
     constant CFG_MODE : integer := 0;
     constant CFG_MOT_MODE : integer := 0;
-    constant CFG_MOT_SSEL : integer := 1;
+    constant CFG_MOT_SSEL : integer := 0;
     constant CFG_NSC_OPERATION : integer := 0;
     constant CFG_TI_JMB_FRAMES : integer := 0;
     constant CFG_TI_NSC_CUSTOM : integer := 0;

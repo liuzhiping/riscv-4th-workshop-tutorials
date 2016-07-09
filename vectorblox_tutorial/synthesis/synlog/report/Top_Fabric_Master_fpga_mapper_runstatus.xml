@@ -5,7 +5,7 @@ The file contains the job information from mapper to be displayed as part of the
 *******************************************************************************************-->
 <job_run_status name="Mapper">
 <report_link name="Detailed report">
-<data>/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synlog/Top_Fabric_Master_fpga_mapper.srr</data>
+<data>/nfs/home/ryan/orca_new_60/sf2plus/synthesis/synlog/Top_Fabric_Master_fpga_mapper.srr</data>
 <title>Synopsys Generic Technology Mapper</title>
 </report_link>
 <job_status>
@@ -13,34 +13,34 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>926</data>
+<data>997</data>
 <report_link name="more">
-<data>/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synlog/report/Top_Fabric_Master_fpga_mapper_notes.txt</data>
+<data>/nfs/home/ryan/orca_new_60/sf2plus/synthesis/synlog/report/Top_Fabric_Master_fpga_mapper_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
 <data>87</data>
 <report_link name="more">
-<data>/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synlog/report/Top_Fabric_Master_fpga_mapper_warnings.txt</data>
+<data>/nfs/home/ryan/orca_new_60/sf2plus/synthesis/synlog/report/Top_Fabric_Master_fpga_mapper_warnings.txt</data>
 </report_link>
 </info>
 <info name="Errors">
 <data>0</data>
 <report_link name="more">
-<data>/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synlog/report/Top_Fabric_Master_fpga_mapper_errors.txt</data>
+<data>/nfs/home/ryan/orca_new_60/sf2plus/synthesis/synlog/report/Top_Fabric_Master_fpga_mapper_errors.txt</data>
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:00m:59s</data>
+<data>0h:01m:05s</data>
 </info>
 <info name="Real Time">
-<data>0h:01m:00s</data>
+<data>0h:01m:06s</data>
 </info>
 <info name="Peak Memory">
-<data>315MB</data>
+<data>316MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1467914170</data>
+<data type="timestamp">1468088216</data>
 </info>
 </job_info>
 </job_run_status>

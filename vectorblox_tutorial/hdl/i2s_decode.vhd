@@ -41,24 +41,19 @@ begin  -- architecture rtl
   begin
     if rising_edge(clk) then
       old_sclk   <= sclk;
-      old_ws     <= ws;
       data_valid <= '0';
       if old_sclk /= sclk and sclk = '1' then  --rising edge sclk
-        internal_data <= sd & internal_data(internal_data'left-1 downto 0);
-      end if;
-      if ws /= old_ws and ws = WS_RIGHT then
-        internal_data_left                           <= internal_data;
-        internal_data(internal_data'left-1 downto 0) <= (others => '0');
-      end if;
-      if ws /= old_ws and ws = WS_LEFT then
-        internal_data_right                          <= internal_data;
-        internal_data(internal_data'left-1 downto 0) <= (others => '0');
-        data_valid                                   <= '1';
+        old_ws     <= ws;
+        if old_ws = WS_LEFT then 
+          internal_data_left <= internal_data_left(internal_data_left'left-1 downto 0) & sd;
+        else
+          internal_data_right <= internal_data_right(internal_data_right'left-1 downto 0) & sd;
+        end if;
+        if ws /= old_ws and ws = WS_LEFT then
+          data_valid                                   <= '1';
+        end if;
       end if;
 
-      if reset = '1' then
-        internal_data <= (others => '0');
-      end if;
     end if;
   end process;
   pdata <= internal_data_left& internal_data_right;
