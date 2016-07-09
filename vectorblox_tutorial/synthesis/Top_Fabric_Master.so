@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<SynplifyOutput>
-	<result>Success</result>
-	<design>Top_Fabric_Master</design>
-	<target_edif>/nfs/home/ryan/orca_new_60/sf2plus/synthesis/Top_Fabric_Master.edn</target_edif>
-</SynplifyOutput>

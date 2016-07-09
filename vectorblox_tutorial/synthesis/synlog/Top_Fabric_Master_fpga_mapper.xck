@@ -1,7 +1,0 @@
-CKID0001:@|S:my_mss_top_0.my_mss_0.my_mss_MSS_0.MSS_ADLIB_INST@|E:my_mss_top_0.my_mss_0.my_mss_MSS_0.MSS_ADLIB_INST@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:CORESPI_0.USPI.URF.m121@|E:axi_splitter_0.M_RVALID@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
-CKID0003:@|S:axi_splitter_0.s0_awid12_i@|E:axi_splitter_0.M_BVALID@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
-CKID0004:@|S:CORESPI_0.USPI.UCC.stxs_txready_at_ssel_RNO@|E:CORESPI_0.USPI.UCC.stxs_txready_at_ssel@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
-CKID0005:@|S:my_mss_top_0.my_mss_0.CCC_0.GL0_INST@|E:my_mss_top_0.my_mss_0.my_mss_MSS_0.MSS_ADLIB_INST@|F:@syn_sample_clock_path1==CKID0005@|M:ClockId0005 
-CKID0006:@|S:my_mss_top_0.my_mss_0.CCC_0.GL1_INST@|E:vectorblox_mxp_0.scratchpad_memory.secondcycle@|F:@syn_sample_clock_path==CKID0006@|M:ClockId0006 
-CKID0007:@|S:my_mss_top_0.my_mss_0.FABOSC_0.I_RCOSC_25_50MHZ_FAB_CLKINT@|E:my_mss_top_0.my_mss_0.CORERESETP_0.sdif0_areset_n_rcosc_q1@|F:@syn_sample_clock_path==CKID0007@|M:ClockId0007 
