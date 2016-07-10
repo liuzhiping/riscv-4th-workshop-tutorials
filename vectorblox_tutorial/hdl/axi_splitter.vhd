@@ -272,7 +272,45 @@ entity axi_splitter is
     FLASH_RRESP    : in  std_logic_vector(1 downto 0);
     FLASH_RLAST    : in  std_logic;
     FLASH_RVALID   : in  std_logic;
-    FLASH_RREADY   : out std_logic
+    FLASH_RREADY   : out std_logic;
+    
+    -- Slave 6 
+    S5_AWID     : out std_logic_vector(3 downto 0); 
+    S5_AWADDR   : out std_logic_vector(REGISTER_SIZE-1 downto 0);
+    S5_AWLEN    : out std_logic_vector(3 downto 0); 
+    S5_AWSIZE   : out std_logic_vector(2 downto 0);
+    S5_AWBURST  : out std_logic_vector(1 downto 0);
+    S5_AWLOCK   : out std_logic_vector(1 downto 0);
+    S5_AWVALID  : out std_logic;
+    S5_AWREADY  : in  std_logic;
+
+    S5_WID      : out std_logic_vector(3 downto 0);
+    S5_WSTRB    : out std_logic_vector(3 downto 0);
+    S5_WLAST    : out std_logic;
+    S5_WVALID   : out std_logic;
+    S5_WDATA    : out std_logic_vector(REGISTER_SIZE-1 downto 0);
+    S5_WREADY   : in  std_logic;
+
+    S5_BID      : in  std_logic_vector(3 downto 0);
+    S5_BRESP    : in  std_logic_vector(1 downto 0);
+    S5_BVALID   : in  std_logic;
+    S5_BREADY   : out std_logic;
+
+    S5_ARID     : out std_logic_vector(3 downto 0);
+    S5_ARADDR   : out std_logic_vector(REGISTER_SIZE-1 downto 0);
+    S5_ARLEN    : out std_logic_vector(3 downto 0);
+    S5_ARSIZE   : out std_logic_vector(2 downto 0);
+    S5_ARLOCK   : out std_logic_vector(1 downto 0);
+    S5_ARBURST  : out std_logic_vector(1 downto 0);
+    S5_ARVALID  : out std_logic;
+    S5_ARREADY  : in  std_logic;
+
+    S5_RID      : in  std_logic_vector(3 downto 0);
+    S5_RDATA    : in  std_logic_vector(REGISTER_SIZE-1 downto 0);
+    S5_RRESP    : in  std_logic_vector(1 downto 0);
+    S5_RLAST    : in  std_logic;
+    S5_RVALID   : in  std_logic;
+    S5_RREADY   : out std_logic
   );
 end entity axi_splitter;
   
@@ -328,6 +366,12 @@ begin
     S4_BID,
     S4_BRESP,
     S4_BVALID,
+
+    S5_AWREADY,
+    S5_WREADY,
+    S5_BID,
+    S5_BRESP,
+    S5_BVALID,
 
     FLASH_AWREADY,
     FLASH_WREADY,
@@ -439,6 +483,23 @@ begin
     FLASH_WDATA   <= (others => '0');
                   
     FLASH_BREADY  <= '0';
+    
+    -- Slave 6
+    S5_AWID    <= (others => '0');
+    S5_AWADDR  <= (others => '0');
+    S5_AWLEN   <= (others => '0');
+    S5_AWSIZE  <= (others => '0');
+    S5_AWBURST <= (others => '0');
+    S5_AWLOCK  <= (others => '0');
+    S5_AWVALID <= '0';
+                 
+    S5_WID     <= (others => '0');
+    S5_WSTRB   <= (others => '0');
+    S5_WLAST   <= '0';
+    S5_WVALID  <= '0';
+    S5_WDATA   <= (others => '0');
+                 
+    S5_BREADY  <= '0';
 
     case slave_select_w is
       when X"1" =>
@@ -573,6 +634,28 @@ begin
         M_BVALID    <= FLASH_BVALID;
         FLASH_BREADY  <= M_BREADY;
                              
+      when X"6" =>       
+        S5_AWID    <= M_AWID;
+        S5_AWADDR  <= M_AWADDR;
+        S5_AWLEN   <= M_AWLEN;
+        S5_AWSIZE  <= M_AWSIZE;
+        S5_AWBURST <= M_AWBURST;
+        S5_AWLOCK  <= M_AWLOCK;
+        S5_AWVALID <= M_AWVALID;
+        M_AWREADY   <= S5_AWREADY;
+                             
+        S5_WID     <= M_WID;
+        S5_WSTRB   <= M_WSTRB;
+        S5_WLAST   <= M_WLAST;
+        S5_WVALID  <= M_WVALID;
+        S5_WDATA   <= M_WDATA;
+        M_WREADY    <= S5_WREADY;
+                             
+        M_BID       <= S5_BID;
+        M_BRESP     <= S5_BRESP;
+        M_BVALID    <= S5_BVALID;
+        S5_BREADY  <= M_BREADY;
+
       when others => 
     end case;
   end process;
@@ -628,6 +711,13 @@ begin
     FLASH_RRESP,
     FLASH_RLAST,
     FLASH_RVALID,
+
+    S4_ARREADY,       
+    S4_RID,
+    S4_RDATA,
+    S4_RRESP,
+    S4_RLAST,
+    S4_RVALID,
 
     slave_select_r
   ) 
@@ -697,6 +787,17 @@ begin
     FLASH_ARVALID <= '0';
                   
     FLASH_RREADY  <= '0';
+
+    -- Slave 5
+    S5_ARID    <= (others => '0');
+    S5_ARADDR  <= (others => '0');
+    S5_ARLEN   <= (others => '0');
+    S5_ARSIZE  <= (others => '0');
+    S5_ARLOCK  <= (others => '0');
+    S5_ARBURST <= (others => '0');
+    S5_ARVALID <= '0';
+                 
+    S5_RREADY  <= '0';
 
     case slave_select_r is
       when X"1" =>
@@ -800,6 +901,23 @@ begin
         M_RLAST    <= FLASH_RLAST;
         M_RVALID   <= FLASH_RVALID;
         FLASH_RREADY  <= M_RREADY;
+        
+      when X"6" =>
+        S5_ARID    <= M_ARID;
+        S5_ARADDR  <= M_ARADDR;
+        S5_ARLEN   <= M_ARLEN;
+        S5_ARSIZE  <= M_ARSIZE;
+        S5_ARLOCK  <= M_ARLOCK;
+        S5_ARBURST <= M_ARBURST;
+        S5_ARVALID <= M_ARVALID;
+        M_ARREADY  <= S5_ARREADY;
+                             
+        M_RID      <= S5_RID;
+        M_RDATA    <= S5_RDATA;
+        M_RRESP    <= S5_RRESP;
+        M_RLAST    <= S5_RLAST;
+        M_RVALID   <= S5_RVALID;
+        S5_RREADY  <= M_RREADY;
 
       when others =>
     end case;

@@ -1,5 +1,0 @@
-@E: CD371 :"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/i2s_decode.vhd":29:48:29:60|No matching overload for "/"
-@E: CD371 :"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/i2s_decode.vhd":29:48:29:60|No matching overload for "/"
-@E: CD371 :"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/i2s_decode.vhd":29:48:29:60|No matching overload for "/"
-@E: CD308 :"/nfs/home/joel/Documents/orca_sf2+/sf2plus/hdl/i2s_decode.vhd":29:48:29:60|Unable to evaluate expression type
-

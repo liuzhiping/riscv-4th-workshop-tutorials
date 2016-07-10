@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Microsemi SmartDesign Fri Jun 17 15:10:12 2016
+-- Created by Microsemi SmartDesign Sat Jul  9 09:29:07 2016
 -- Parameters for RESET_GEN
 ----------------------------------------------------------------------
 
@@ -10,6 +10,6 @@ LIBRARY ieee;
    USE ieee.numeric_std.all;
 
 package coreparameters is
-    constant DELAY : integer := 1000;
+    constant DELAY : integer := 500;
     constant LOGIC_LEVEL : integer := 0;
 end coreparameters;

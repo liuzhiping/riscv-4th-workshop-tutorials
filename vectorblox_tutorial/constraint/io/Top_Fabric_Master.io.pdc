@@ -74,7 +74,7 @@ set_io TX           \
     -iostd LVCMOS33   \
     -DIRECTION OUTPUT
 
-set_io TEST_1 \
+#set_io TEST_1 \
     -pinname A2 \
     -fixed yes \
     -iostd LVCMOS33 \
@@ -85,10 +85,10 @@ set_io i2s_sck_i \
     -fixed yes \
     -iostd LVTTL \
     -RES_PULL Down \
-    -direction INPUT
+    -direction OUTPUT
 
 set_io i2s_sd_i \
-    -pinname G7 \
+    -pinname H7 \
     -fixed yes \
     -iostd LVTTL \
     -DIRECTION INPUT
@@ -97,7 +97,7 @@ set_io i2s_ws_i \
     -pinname G6 \
     -fixed yes \
     -iostd LVTTL \
-    -DIRECTION INPUT
+    -DIRECTION OUTPUT
 
 set_io SPISCLKO \
     -pinname M21 \
@@ -107,6 +107,13 @@ set_io SPISCLKO \
 
 set_io SPISS \
     -pinname L20 \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTION OUTPUT
+
+# for debug purposes
+set_io SPISS_COPY \
+    -pinname K16 \
     -fixed yes \
     -iostd LVTTL \
     -DIRECTION OUTPUT
@@ -123,6 +130,29 @@ set_io SPISDO \
     -iostd LVTTL \
     -DIRECTION OUTPUT
     
+set_io RESET_OUT_N \
+    -pinname D5 \
+    -fixed yes  \
+    -iostd LVCMOS33 \
+    -DIRECTION OUTPUT
+
+set_io i2s_sd_copy \
+    -pinname E4 \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTION OUTPUT
+
+set_io i2s_sck_copy \
+    -pinname E22    \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTION OUTPUT
+
+set_io i2s_ws_copy \
+    -pinname B22    \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTIOn OUTPUT
 
 # 
 # Dedicated Peripheral I/O Settings

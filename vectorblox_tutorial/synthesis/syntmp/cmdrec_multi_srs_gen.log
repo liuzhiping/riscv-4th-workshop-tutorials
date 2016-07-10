@@ -1,8 +1,0 @@
-/usr/local/microsemi/Libero_v11.7/Synplify/bin/syn_nfilter  -link  -top  work.Top_Fabric_Master  -multisrs  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synwork/Top_Fabric_Master_comp.srs  -osyn  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synwork/Top_Fabric_Master_mult.srs  -log  /nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synlog/Top_Fabric_Master_multi_srs_gen.srr 
-rc:0 success:1
-/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synwork/Top_Fabric_Master_comp.srs|i|1467914081|718716
-/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synwork/Top_Fabric_Master_mult.srs|o|1467914083|48142
-/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/synlog/Top_Fabric_Master_multi_srs_gen.srr|o|1467914083|485
-/usr/local/microsemi/Libero_v11.7/Synplify/linux_a_64/syn_nfilter|i|1456362170|8820528
-/usr/local/microsemi/Libero_v11.7/Synplify/linux/syn_nfilter|i|1456362167|8227536
-/usr/local/microsemi/Libero_v11.7/Synplify/bin/syn_nfilter|i|1456362165|366

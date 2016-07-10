@@ -9,44 +9,44 @@ TDPR scenario            : Primary
 
 
 Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 15 fixed I/O macros, 0 unfixed I/O macros
+Info:  I/O Bank and Globals Assigner identified 19 fixed I/O macros, 0 unfixed I/O macros
 
 I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V4.0 - 11.7.0
-Design: Top_Fabric_Master               Started: Thu Jul  7 11:05:00 2016
+Design: Top_Fabric_Master               Started: Sat Jul  9 11:17:45 2016
 
 Initializing Timing-Driven Placement ...
-While analyzing gated clock network, ambiguities have been found on gates CORESPI_0/USPI/UCC/spi_ssel_mux:Y.
+While analyzing gated clock network, ambiguities have been found on gates CORESPI_0/USPI/UCC/un1_resetn_rx_0_m2:Y.
 The timing models of these gates have been simplified for Static Timing Analysis.
 Placing design...
 End of placement.
 Pre-Placement Runtime        : 16 seconds
-Placement Runtime            : 182 seconds
+Placement Runtime            : 53 seconds
 
 Placer completed successfully.
 
 Design: Top_Fabric_Master
-Finished: Thu Jul  7 11:08:50 2016
-Total CPU Time:     00:03:48            Total Elapsed Time: 00:03:50
-Total Memory Usage: 661.6 Mbytes
+Finished: Sat Jul  9 11:19:28 2016
+Total CPU Time:     00:01:42            Total Elapsed Time: 00:01:43
+Total Memory Usage: 914.8 Mbytes
                         o - o - o - o - o - o
 
 
 Router
-Design: Top_Fabric_Master               Started: Thu Jul  7 11:08:59 2016
+Design: Top_Fabric_Master               Started: Sat Jul  9 11:19:38 2016
 
 
 Router completed successfully.
 
 Design: Top_Fabric_Master
-Finished: Thu Jul  7 11:09:55 2016
-Total CPU Time:     00:00:54            Total Elapsed Time: 00:00:56
-Total Memory Usage: 625.6 Mbytes
+Finished: Sat Jul  9 11:20:45 2016
+Total CPU Time:     00:01:06            Total Elapsed Time: 00:01:07
+Total Memory Usage: 1997.4 Mbytes
                         o - o - o - o - o - o
 
-While analyzing gated clock network, ambiguities have been found on gates CORESPI_0/USPI/UCC/spi_ssel_mux:Y.
+While analyzing gated clock network, ambiguities have been found on gates CORESPI_0/USPI/UCC/un1_resetn_rx_0_m2:Y.
 The timing models of these gates have been simplified for Static Timing Analysis.
 Info: Iteration 1:
   Number of violating paths: 0
@@ -55,9 +55,9 @@ Resource Usage
 +---------------+-------+-------+------------+
 | Type          | Used  | Total | Percentage |
 +---------------+-------+-------+------------+
-| 4LUT          | 10309 | 12084 | 85.31      |
-| DFF           | 6535  | 12084 | 54.08      |
-| I/O Register  | 0     | 693   | 0.00       |
-| Logic Element | 11008 | 12084 | 91.10      |
+| 4LUT          | 10499 | 56520 | 18.58      |
+| DFF           | 6703  | 56520 | 11.86      |
+| I/O Register  | 0     | 795   | 0.00       |
+| Logic Element | 11489 | 56520 | 20.33      |
 +---------------+-------+-------+------------+
 

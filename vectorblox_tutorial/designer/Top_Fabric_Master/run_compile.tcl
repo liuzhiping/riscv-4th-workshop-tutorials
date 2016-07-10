@@ -8,7 +8,7 @@ set_defvar -name {PA4_GB_MAX_RCLKINT_INSERTION} -value {16}
 set_defvar -name {PA4_GB_MIN_GB_FANOUT_TO_USE_RCLKINT} -value {300}
 set_defvar -name {PA4_GB_MAX_FANOUT_DATA_MOVE} -value {5000}
 set_defvar -name {PA4_GB_HIGH_FANOUT_THRESHOLD} -value {5000}
-set_defvar -name {PA4_GB_COUNT} -value {8}
+set_defvar -name {PA4_GB_COUNT} -value {16}
 set_defvar -name {RESTRICTPROBEPINS} -value {1}
 set_defvar -name {RESTRICTSPIPINS} -value {0}
 set_defvar -name {PDC_IMPORT_HARDERROR} -value {1}
@@ -25,7 +25,7 @@ set_compile_info \
 set_compile_info \
     -category {"Device Selection"} \
     -name {"Device"} \
-    -value {"M2S010"}
+    -value {"M2S060"}
 set_compile_info \
     -category {"Device Selection"} \
     -name {"Package"} \
@@ -81,11 +81,11 @@ set_compile_info \
 set_compile_info \
     -category {"Source Files"} \
     -name {"Source"} \
-    -value {"/nfs/home/joel/Documents/orca_sf2+/sf2plus/synthesis/Top_Fabric_Master.edn"}
+    -value {"/nfs/home/ryan/orca_new_60/sf2plus/synthesis/Top_Fabric_Master.edn"}
 set_compile_info \
     -category {"Source Files"} \
     -name {"Source"} \
-    -value {"/nfs/home/joel/Documents/orca_sf2+/sf2plus/constraint/io/Top_Fabric_Master.io.pdc"}
+    -value {"/nfs/home/ryan/orca_new_60/sf2plus/constraint/io/Top_Fabric_Master.io.pdc"}
 set_compile_info \
     -category {"Options"} \
     -name {"Merge User SDC file(s) with Existing Timing Constraints"} \
@@ -107,10 +107,10 @@ set_compile_info \
     -name {"Limit the number of high fanout nets to display to"} \
     -value {"10"}
 compile \
-    -desdir {/nfs/home/joel/Documents/orca_sf2+/sf2plus/designer/Top_Fabric_Master} \
+    -desdir {/nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master} \
     -design Top_Fabric_Master \
     -fam SmartFusion2 \
-    -die PA4M1000_N \
+    -die PA4M6000_N \
     -pkg fg484 \
-    -pdc_file {/nfs/home/joel/Documents/orca_sf2+/sf2plus/constraint/io/Top_Fabric_Master.io.pdc} \
+    -pdc_file {/nfs/home/ryan/orca_new_60/sf2plus/constraint/io/Top_Fabric_Master.io.pdc} \
     -merge_pdc 0

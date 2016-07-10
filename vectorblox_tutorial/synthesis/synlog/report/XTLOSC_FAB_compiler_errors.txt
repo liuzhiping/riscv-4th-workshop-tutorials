@@ -1,2 +1,0 @@
-@E: CD755 :"/nfs/home/joel/Documents/orca_sf2+/sf2plus/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd":95:7:95:16|Selected top-level module XTLOSC_FAB is a black box 
-

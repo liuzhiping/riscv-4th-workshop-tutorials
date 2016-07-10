@@ -1,11 +1,11 @@
 ********************************************************************
-I/O Bank Report - Date: Thu Jul  7 11:10:24 2016
+I/O Bank Report - Date: Sat Jul  9 11:21:22 2016
 Product: Designer
 Release: v11.7
 Version: 11.7.0.119
 Design Name: Top_Fabric_Master
 Family: SmartFusion2
-Die: M2S010
+Die: M2S060
 Package: 484 FBGA
 ********************************************************************
 
@@ -15,7 +15,7 @@ I/O Function:
     Type                                  | w/o register  | w/ register  | w/ DDR register
     --------------------------------------|---------------|--------------|----------------
     Input I/O                             | 5             | 0            | 0
-    Output I/O                            | 10            | 0            | 0
+    Output I/O                            | 14            | 0            | 0
     Bidirectional I/O                     | 0             | 0            | 0
     Differential Input I/O Pairs          | 0             | 0            | 0
     Differential Output I/O Pairs         | 0             | 0            | 0
@@ -26,7 +26,7 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vddi  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 4     | 3      | 0            
+    LVTTL                           | 3.30v | N/A   | 4     | 7      | 0            
     LVCMOS33                        | 3.30v | N/A   | 1     | 7      | 0            
 
 I/O Bank Resource Usage:
@@ -35,14 +35,16 @@ I/O Bank Resource Usage:
           |-------|-------|------|-------|-------|--------|------|-------|----------|---------
           | Vddi  | Vref  | Used | Total | Used  | Total  | Used | Total | Vref Pins|         
     ------|-------|-------|------|-------|-------|--------|------|-------|----------|---------
-    Bank0 | N/A   | N/A   | 0    | 70    | 0     | 35     | N/A  | N/A   | N/A      | DDRIO   
-    Bank1 | 3.30v | N/A   | 2    | 15    | 0     | 7      | N/A  | N/A   | N/A      | MSIO    
-    Bank2 | 3.30v | N/A   | 4    | 38    | 0     | 19     | N/A  | N/A   | N/A      | MSIO    
-    Bank3 | N/A   | N/A   | 0    | 0     | 0     | 0      | N/A  | N/A   | N/A      | JTAG    
-    Bank4 | 3.30v | N/A   | 1    | 34    | 0     | 17     | N/A  | N/A   | N/A      | MSIO    
-    Bank5 | N/A   | N/A   | 0    | 4     | 0     | 2      | N/A  | N/A   | N/A      | MSIOD   
-    Bank6 | N/A   | N/A   | 0    | 36    | 0     | 18     | N/A  | N/A   | N/A      | MSIOD   
-    Bank7 | 3.30v | N/A   | 8    | 36    | 0     | 18     | N/A  | N/A   | N/A      | MSIO    
+    Bank0 | N/A   | N/A   | 0    | 0     | 0     | 0      | N/A  | N/A   | N/A      | MSIO    
+    Bank1 | N/A   | N/A   | 0    | 70    | 0     | 35     | N/A  | N/A   | N/A      | DDRIO   
+    Bank2 | 3.30v | N/A   | 4    | 21    | 0     | 10     | N/A  | N/A   | N/A      | MSIO    
+    Bank3 | N/A   | N/A   | 0    | 0     | 0     | 0      | N/A  | N/A   | N/A      | MSIO    
+    Bank4 | 3.30v | N/A   | 5    | 44    | 0     | 22     | N/A  | N/A   | N/A      | MSIO    
+    Bank5 | N/A   | N/A   | 0    | 0     | 0     | 0      | N/A  | N/A   | N/A      | JTAG    
+    Bank6 | 3.30v | N/A   | 1    | 52    | 0     | 26     | N/A  | N/A   | N/A      | MSIO    
+    Bank7 | N/A   | N/A   | 0    | 4     | 0     | 2      | N/A  | N/A   | N/A      | MSIOD   
+    Bank8 | N/A   | N/A   | 0    | 36    | 0     | 18     | N/A  | N/A   | N/A      | MSIOD   
+    Bank9 | 3.30v | N/A   | 9    | 40    | 0     | 20     | N/A  | N/A   | N/A      | MSIO    
 
 I/O Voltage Usage:
 
@@ -50,5 +52,5 @@ I/O Voltage Usage:
     -------|-------|------|-------
      Vddi  | Vref  | Used | Total 
     -------|-------|------|-------
-     3.30v | N/A   | 15   | 123   
+     3.30v | N/A   | 19   | 157   
 
