@@ -4,7 +4,11 @@ AS_SRCS=crt.S
 C_SRCS=
 C_SRCS+=main.c
 C_SRCS+=printf.c
+C_SRCS+=spi.c
 C_SRCS+=mxp_test.c
+C_SRCS+=arrow_zl380tw.c
+C_SRCS+=arrow_zl380tw_firmware.c
+C_SRCS+=arrow_zl380tw_config.c
 
 
 C_OBJ_FILES=$(addprefix obj/,$(addsuffix .o, $(C_SRCS)))

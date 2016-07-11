@@ -1,7 +1,7 @@
 #!/bin/sh
 if [ $# -eq 1 ]
 then
-	 ENVM=$1
+	 ENVM=ENVM
 else
 	 ENVM=FABRIC
 fi

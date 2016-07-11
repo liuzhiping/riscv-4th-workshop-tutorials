@@ -14,9 +14,8 @@
 OUTPUT_ARCH( "riscv" )
 MEMORY
 {
- IMEM : ORIGIN = 0x0, LENGTH = 0x1600
- DMEM : ORIGIN = 0x1600, LENGTH = 0xA00 
- FMEM : ORIGIN = 0x2000, LENGTH = 200K
+ BMEM : ORIGIN =  0K, LENGTH = 32K 
+ FMEM : ORIGIN = 32K, LENGTH = 200K
 }
 /*----------------------------------------------------------------------*/
 /* Sections                                                             */
@@ -31,43 +30,43 @@ SECTIONS
   .init . :
   {
 	  *(.init)
-  }>IMEM
+  }>BMEM
   .text :
   {
     *(.text)
-  }>IMEM
+  }>BMEM
   /* data segment */
-  .data : { *(.data) }>FMEM
+  .data : { *(.data) }>BMEM
   .rodata : { *(.rodata) }>FMEM
 
   .sdata : {
     _gp = . + 0x800;
     *(.srodata.cst16) *(.srodata.cst8) *(.srodata.cst4) *(.srodata.cst2) *(.srodata*)
     *(.sdata .sdata.* .gnu.linkonce.s.*)
-  }>DMEM
+  }>BMEM
 
   /* bss segment */
   .sbss : {
     *(.sbss .sbss.* .gnu.linkonce.sb.*)
     *(.scommon)
-  }>DMEM
-  .bss : { *(.bss) }>DMEM
+  }>BMEM
+  .bss : { *(.bss) }>BMEM
 
   /* thread-local data segment */
   .tdata :
   {
     _tls_data = .;
     *(.tdata)
-  }>DMEM
+  }>BMEM
   .tbss :
   {
     *(.tbss)
-  }>DMEM
+  }>BMEM
 
 
 
   /* End of uninitalized data segement */
   _end = .;
 
-  _end_of_memory = 8K;
+  _end_of_memory = 32K;
 }

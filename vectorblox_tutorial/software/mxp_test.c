@@ -1,6 +1,6 @@
 #include "printf.h"
 #define MXP_HALF_FXP_BITS    15
-#define MXP_DATA_SPAN        (8*1024)
+#define MXP_DATA_SPAN        (32*1024)
 #define MXP_SCRATCHPAD_BASE  0x10000000
 #define MXP_INSTRUCTION_BASE 0x20000000
 #include "vbx.h"
@@ -8,18 +8,18 @@
 
 //For HDL simulation, run shorter tests, don't print full output
 #define SIMULATION        0
-#define TEST_SCRATCHPAD   0
-#define TEST_INSTRUCTIONS 0
-#define TEST_ACC          0
-#define TEST_ACC_WORD     0
-#define TEST_2D           0
+#define TEST_SCRATCHPAD   1
+#define TEST_INSTRUCTIONS 1
+#define TEST_ACC          1
+#define TEST_ACC_WORD     1
+#define TEST_2D           1
 
-#define TEST_INSTR_MUL     0
-#define TEST_INSTR_MULHI   0
-#define TEST_INSTR_MULFXP  0
-#define TEST_INSTR_SHL     0
-#define TEST_INSTR_SHR     0
-#define TEST_INSTR_CMV_LTZ 0
+#define TEST_INSTR_MUL     1
+#define TEST_INSTR_MULHI   1
+#define TEST_INSTR_MULFXP  1
+#define TEST_INSTR_SHL     1
+#define TEST_INSTR_SHR     1
+#define TEST_INSTR_CMV_LTZ 1
 
 #if SIMULATION
 #define TEST_LENGTH 128 
