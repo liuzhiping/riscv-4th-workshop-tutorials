@@ -116,8 +116,8 @@ void record( int16_t *sample )
 {
 	int16_t left, rght;
 	uint32_t i2s_data = *I2S_DATA; // blocking read
-	left = ((int16_t) ((i2s_data >> 16    ) & 0xFFFF)) >> 2;
-	rght = ((int16_t) ( i2s_data & 0xFFFF)) >> 2; 
+	left = ((int16_t) ((i2s_data >> 16    ) & 0xFFFF)) ;
+	rght = ((int16_t) ( i2s_data & 0xFFFF));
 	*sample = left + rght;
 }
 
@@ -148,4 +148,3 @@ int sound_filter_test()
 
 	return 1;
 }
-
