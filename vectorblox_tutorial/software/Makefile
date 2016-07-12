@@ -3,6 +3,7 @@ AS_SRCS=crt.S
 
 C_SRCS=
 C_SRCS+=main.c
+C_SRCS+=fir.c
 C_SRCS+=printf.c
 C_SRCS+=spi.c
 C_SRCS+=mxp_test.c
