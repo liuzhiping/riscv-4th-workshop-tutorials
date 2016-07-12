@@ -15,7 +15,7 @@
 
 #define NTAPS 64		// NTAPS must be power of 2
 
-static int filter_taps[NTAPS] = {
+static int16_t filter_taps[NTAPS] = {
   -11,
   9,
   46,
@@ -82,52 +82,53 @@ static int filter_taps[NTAPS] = {
   -11
 };
 
-static int16_t lbuf[NTAPS];
-static int16_t rbuf[NTAPS];
-static int lr;
+static int16_t buf[NTAPS];
+static int idx;
 
 void filter_init() {
-	for( lr=0; lr < NTAPS; lr++ ) {
-		lbuf[lr] = rbuf[lr] = 0;
+	for( idx=0; idx < NTAPS; idx++ ) {
+		buf[idx] = 0;
 	}
-	lr = 0;
+	idx = 0;
 }
 
-void filter_put( int16_t lsound, int16_t rsound ) {
-	lbuf[lr] = lsound;
-	rbuf[lr] = rsound;
-	lr = (lr+1) & (NTAPS-1); // NTAPS must be power of 2
+void filter_put( int16_t sample ) {
+	buf[idx] = sample;
+	idx = (idx+1) & (NTAPS-1); // NTAPS must be power of 2
+}
+
+int filter_get( int16_t *buf ) {
+	long long acc = 0;
+	int i, index;
+	for( i=0, index=idx; i < NTAPS; i++ ) {
+		const int sample = (int) buf[ (index--) & (NTAPS-1) ];
+		const int tap    = (int) filter_taps[i];
+		acc += (long long) (sample*tap);
+	};
+	return acc >> 16;
 }
 
 
 
 // SOUND SAMPLE RECORD AND PLAYBACK
 
-void record( int16_t *lsound, int16_t *rsound )
+void record( int16_t *sample )
 {
+	int16_t left, rght;
 	uint32_t i2s_data = *I2S_DATA; // blocking read
-	*lsound = ((int16_t) ((i2s_data >> 16    ) & 0xFFFF)) >> 2;
-	*rsound = ((int16_t) ( i2s_data & 0xFFFF)) >> 2; 
+	left = ((int16_t) ((i2s_data >> 16    ) & 0xFFFF)) >> 2;
+	rght = ((int16_t) ( i2s_data & 0xFFFF)) >> 2; 
+	*sample = left + rght;
 }
 
-void play( int16_t lsound, int16_t rsound )
+void play( int16_t sample )
 {
-	uint32_t data = (((uint32_t)lsound) << 16) | ((uint32_t)rsound);
+	uint32_t data = (((uint32_t)sample) << 16) | ((uint32_t)sample);
 	*SPEAKER_DATA = data; // blocking write
 }
 
-int filter_get( int16_t *buf ) {
-	long long acc = 0;
-	int index = lr;
-	int i;
-	for( i=0; i < NTAPS; i++ ) {
-		acc += (long long)buf[(index--) & 63] * filter_taps[i];
-	};
-	return acc >> 16;
-}
 
-
-int sound_filter_test(void)
+int sound_filter_test()
 {
 
 	//init_printf(0, mputc);
@@ -136,14 +137,13 @@ int sound_filter_test(void)
 	filter_init();
 
 	while(1) {
-		int16_t lsound, rsound;
-		record( &lsound, &rsound );
+		int16_t sample;
+		record( &sample );
 #if USE_SCALAR_FILTER
-		filter_put( lsound, rsound );
-		lsound = filter_get( lbuf );
-		rsound = filter_get( rbuf );
+		filter_put( sample );
+		sample = filter_get( buf );
 #endif
-		play( lsound, rsound );
+		play( sample );
 	}
 
 	return 1;
