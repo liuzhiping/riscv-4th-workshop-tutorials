@@ -14,7 +14,8 @@
 OUTPUT_ARCH( "riscv" )
 MEMORY
 {
- BMEM : ORIGIN =  0K, LENGTH = 32K 
+ IMEM : ORIGIN = 0x0, LENGTH = 16K 
+ DMEM : ORIGIN = 16K, LENGTH = 16K 
  FMEM : ORIGIN = 32K, LENGTH = 200K
 }
 /*----------------------------------------------------------------------*/
@@ -30,38 +31,38 @@ SECTIONS
   .init . :
   {
 	  *(.init)
-  }>BMEM
+  }>IMEM
   .text :
   {
     *(.text)
-  }>BMEM
+  }>IMEM
   /* data segment */
-  .data : { *(.data) }>BMEM
+  .data : { *(.data) }>DMEM
   .rodata : { *(.rodata) }>FMEM
 
   .sdata : {
     _gp = . + 0x800;
     *(.srodata.cst16) *(.srodata.cst8) *(.srodata.cst4) *(.srodata.cst2) *(.srodata*)
     *(.sdata .sdata.* .gnu.linkonce.s.*)
-  }>BMEM
+  }>DMEM
 
   /* bss segment */
   .sbss : {
     *(.sbss .sbss.* .gnu.linkonce.sb.*)
     *(.scommon)
-  }>BMEM
-  .bss : { *(.bss) }>BMEM
+  }>DMEM
+  .bss : { *(.bss) }>DMEM
 
   /* thread-local data segment */
   .tdata :
   {
     _tls_data = .;
     *(.tdata)
-  }>BMEM
+  }>DMEM
   .tbss :
   {
     *(.tbss)
-  }>BMEM
+  }>DMEM
 
 
 

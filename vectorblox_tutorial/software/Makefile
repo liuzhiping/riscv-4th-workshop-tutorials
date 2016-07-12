@@ -3,16 +3,18 @@ AS_SRCS=crt.S
 
 C_SRCS=
 C_SRCS+=main.c
-C_SRCS+=fir.c
-C_SRCS+=printf.c
+
 C_SRCS+=spi.c
+C_SRCS+=fir.c
 C_SRCS+=mxp_test.c
 C_SRCS+=arrow_zl380tw.c
 C_SRCS+=arrow_zl380tw_firmware.c
 C_SRCS+=arrow_zl380tw_config.c
 
+PRINT_SRCS+=printf.c
 
 C_OBJ_FILES=$(addprefix obj/,$(addsuffix .o, $(C_SRCS)))
+PRINT_OBJ_FILES=$(addprefix obj/,$(addsuffix .o, $(PRINT_SRCS)))
 S_OBJ_FILES=$(addprefix obj/,$(addsuffix .o, $(AS_SRCS)))
 
 CROSS_COMPILE=riscv64-unknown-elf-
@@ -20,26 +22,30 @@ CC=$(CROSS_COMPILE)gcc
 OBJCOPY=$(CROSS_COMPILE)objcopy
 OBJDUMP=$(CROSS_COMPILE)objdump
 ARCH=RV32IM
-CFLAGS= -m32 -O2 -fno-delete-null-pointer-checks -g -march=$(ARCH)  -MD -Wall -std=gnu99
+CFLAGS= -m32 -O2 -fno-delete-null-pointer-checks -g   -MD -Wall -std=gnu99
 LD_FLAGS= -m32 -march=$(ARCH) -static -nostartfiles
 
 TARGET=test
 
-$(C_OBJ_FILES) $(S_OBJ_FILES) : | obj/
+OBJS=$(C_OBJ_FILES) $(S_OBJ_FILES) $(PRINT_OBJ_FILES)
+$(OBJS): | obj/
+
 obj/:
 	mkdir -p obj/
+$(PRINT_OBJ_FILES): obj/%.c.o : %.c
+	$(CC) $(CFLAGS) -march=RV32I -c $< -o $@
 
 $(C_OBJ_FILES): obj/%.c.o : %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -march=$(ARCH) -c $< -o $@
 
 $(S_OBJ_FILES): obj/%.S.o : %.S
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -march=$(ARCH) -c $< -o $@
 
 LD_SCRIPT=link.ld
 LIBC=
 
-$(TARGET).elf: $(C_OBJ_FILES) $(S_OBJ_FILES) $(LD_SCRIPT)
-	$(CC) -T $(LD_SCRIPT) $(S_OBJ_FILES)  $(C_OBJ_FILES)  -o $@ $(LD_FLAGS)
+$(TARGET).elf: $(OBJS) $(LD_SCRIPT)
+	$(CC) -T $(LD_SCRIPT) $(OBJS)  -o $@ $(LD_FLAGS)
 	$(OBJDUMP)   -D test.elf > test.dump
 $(TARGET).bin: $(TARGET).elf
 	$(OBJCOPY) -O binary $< $@

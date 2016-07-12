@@ -18,12 +18,12 @@ void SPI_clear_ss(int slave) {
 void SPI_transfer_block(const uint8_t *cmd_buffer, uint16_t cmd_byte_size, uint8_t *rd_buffer, uint16_t rd_byte_size) {
 
   uint32_t frame_count;
-  volatile uint32_t rx_raw = 0;
+  volatile uint32_t rx_raw;
   uint32_t transfer_size;
   uint32_t done_flag = 0;
 
   /* Compute number of bytes to transfer. */
-  transfer_size = cmd_byte_size + rd_byte_size + rx_raw/*avoid_compiler_warning*/;
+  transfer_size = cmd_byte_size + rd_byte_size;
 
   /* Adjust to 1 byte transfer to cater for DMA transfers. */
   if (transfer_size == 0)
