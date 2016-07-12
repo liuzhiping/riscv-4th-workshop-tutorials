@@ -10,7 +10,9 @@
 
 
 // FILTER CODE
-#define USE_SCALAR_FILTER 0
+
+#define USE_SCALAR_FILTER 1
+
 #define NTAPS 64		// NTAPS must be power of 2
 
 static int filter_taps[NTAPS] = {

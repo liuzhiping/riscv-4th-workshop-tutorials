@@ -19,7 +19,7 @@ CROSS_COMPILE=riscv64-unknown-elf-
 CC=$(CROSS_COMPILE)gcc
 OBJCOPY=$(CROSS_COMPILE)objcopy
 OBJDUMP=$(CROSS_COMPILE)objdump
-ARCH=RV32IXmxp
+ARCH=RV32IM
 CFLAGS= -m32 -O2 -fno-delete-null-pointer-checks -g -march=$(ARCH)  -MD -Wall -std=gnu99
 LD_FLAGS= -m32 -march=$(ARCH) -static -nostartfiles
 
