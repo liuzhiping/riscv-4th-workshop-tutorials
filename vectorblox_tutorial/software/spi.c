@@ -18,7 +18,6 @@ void SPI_clear_ss(int slave) {
 void SPI_transfer_block(const uint8_t *cmd_buffer, uint16_t cmd_byte_size, uint8_t *rd_buffer, uint16_t rd_byte_size) {
 
   uint32_t frame_count;
-  volatile uint32_t rx_raw;
   uint32_t transfer_size;
   uint32_t done_flag = 0;
 
@@ -40,7 +39,7 @@ void SPI_transfer_block(const uint8_t *cmd_buffer, uint16_t cmd_byte_size, uint8
   *SPI_COMMAND |= (RX_FIFO_RESET_MASK | TX_FIFO_RESET_MASK); 
 
   while(!((*SPI_STATUS) & RX_FIFO_EMPTY_MASK)) {
-    rx_raw = *SPI_RXDATA;
+    (void)*SPI_RXDATA;
   }
 
   /* Send over the command bytes */
@@ -56,7 +55,7 @@ void SPI_transfer_block(const uint8_t *cmd_buffer, uint16_t cmd_byte_size, uint8
       *SPI_TXDATA = cmd_buffer[frame_count++];
     }
     while((*SPI_STATUS) & RX_FIFO_EMPTY_MASK);
-    rx_raw = *SPI_RXDATA;
+    (void)*SPI_RXDATA;
   }
   /* No need to read to receive buffer in this case */
   if (done_flag) {
