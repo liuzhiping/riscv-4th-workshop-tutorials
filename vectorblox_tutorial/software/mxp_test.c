@@ -1,8 +1,4 @@
 #include "printf.h"
-#define MXP_HALF_FXP_BITS    15
-#define MXP_DATA_SPAN        (32*1024)
-#define MXP_SCRATCHPAD_BASE  0x10000000
-#define MXP_INSTRUCTION_BASE 0x20000000
 #include "vbx.h"
 #include "main.h"
 
@@ -34,7 +30,10 @@ int mxp_test(){
 	unsigned int start_time;
 	unsigned int end_time;
 
-	vbx_uhalf_t *v_data = (vbx_uhalf_t *)MXP_SCRATCHPAD_BASE;
+	VectorBlox_MXP_Initialize();
+
+	//vbx_uhalf_t *v_data = (vbx_uhalf_t *)MXP_SCRATCHPAD_BASE;
+	vbx_uhalf_t *v_data = (vbx_uhalf_t *)vbx_sp_malloc( TEST_LENGTH * sizeof(vbx_uhalf_t) );
 
 #if TEST_SCRATCHPAD
 	local_errors = 0;
@@ -382,6 +381,7 @@ int mxp_test(){
 	} else {
 		printf("MXP test passed!\r\n");
 	}
+	vbx_sp_free();
 
 	return errors;
 }
